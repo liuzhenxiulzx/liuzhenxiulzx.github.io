@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>予笙博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="予笙博客">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="予笙博客">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="予笙博客">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="予笙博客" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">首页</a>
+                
+                <a class="navbar-item" href="/archives">档案</a>
+                
+                <a class="navbar-item" href="/categories">分类</a>
+                
+                <a class="navbar-item" href="/tags">标签</a>
+                
+                <a class="navbar-item" href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.551Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 1098 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/python入门之面向对象/">python入门之面向对象</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>python的基础视频看完了，现在学习一下python的OOP编程</p>
+</blockquote>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><ol>
+<li>类的定义：calss name :</li>
+<li>类的调用：name()</li>
+<li>类属性的调用：</li>
+<li>类方法的调用</li>
+<li>调用方法时可以把对象传递过去</li>
+<li>设置属性或者获取属性时尽量用方法获取或者设置（更安全）</li>
+</ol>
+<h2 id="init-方法"><a href="#init-方法" class="headerlink" title="__init()__方法"></a>__init()__方法</h2><ol>
+<li>作用：初始化对象</li>
+</ol>
+<h2 id="str-方法"><a href="#str-方法" class="headerlink" title="__str()__方法"></a>__str()__方法</h2><ol>
+<li>作用：直接打印对象时，返回对象的描述信息，所以定义该方法时必须加:return</li>
+</ol>
+<h2 id="私有方法"><a href="#私有方法" class="headerlink" title="私有方法"></a>私有方法</h2><ol>
+<li>直接在方法前面加__</li>
+<li>私有方法只能在类里面调用</li>
+</ol>
+<h2 id="del-方法"><a href="#del-方法" class="headerlink" title="__del()__方法"></a>__del()__方法</h2><ol>
+<li>对象销毁时，并且所有引用都结束时，调用</li>
+<li>或者在程序结束时调用</li>
+</ol>
+<h2 id="sys模块"><a href="#sys模块" class="headerlink" title="sys模块"></a>sys模块</h2><ol>
+<li>sys.getrefcount()测量对象引用的个数，得到的结果比实际结果多1</li>
+</ol>
+<h2 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h2><ol>
+<li>使用：在派生类定义的时候，在后面加一个括号，写上基类的名字</li>
+<li>方法重写</li>
+<li>方法重写时，可以调用基类的方法，格式：基类.方法(self)或者使用super,格式：super().基类方法()</li>
+<li>类继承以后私有方法（属性）不被继承</li>
+<li>__init()__方法会被继承</li>
+<li>多继承：子类拥有多个父类，使用：直接在括号里面写上多个父类</li>
+<li>\类.<strong>mro</strong>查看类调用方法的顺序(c3算法)</li>
+</ol>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><ol>
+<li>概念： 等到真正调用的时候才真正确定调用的对象是谁</li>
+<li>python多态表现不明显,c或者c++体现明显</li>
+<li>充分体现了动态型语言的特点</li>
+</ol>
+<h2 id="类属性跟实例属性"><a href="#类属性跟实例属性" class="headerlink" title="类属性跟实例属性"></a>类属性跟实例属性</h2><ol>
+<li>类属性定义：在类里面定义的属性</li>
+<li>python中，一切皆对象，类称为类对象,new出来的类称为实例对象</li>
+<li>实例对象里面的属性称为实例属性</li>
+<li>类对象里面的属性称为类属性</li>
+<li>类对象(属性)只有一个</li>
+<li>类对象(属性)如果发生变化，实例对象(属性)也随之变化</li>
+<li>实例对象(属性)互不关联</li>
+<li>获取类属性，类属性=类名.属性</li>
+</ol>
+<h2 id="实例方法-类方法-静态方法"><a href="#实例方法-类方法-静态方法" class="headerlink" title="实例方法,类方法,静态方法"></a>实例方法,类方法,静态方法</h2><ol>
+<li>类方法定义：在方法前面添加：@classmethod ,self改成cls</li>
+<li>可以通过类的名字调用类方法，还可以通过这个类创建出来的对象调用这个类方法</li>
+<li>静态方法定义：在方法前面添加：@staticmethod ,self可以不写<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Game</span><span class="hljs-params">(object)</span>:</span></span><br><span class="line">    <span class="hljs-comment">#类属性</span></span><br><span class="line">    num = <span class="hljs-number">0</span></span><br><span class="line">    <span class="hljs-comment">#实例方法</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        <span class="hljs-comment">#实例属性</span></span><br><span class="line">        self.name = <span class="hljs-string">"laowang"</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">#类方法</span></span><br><span class="line"><span class="hljs-meta">    @classmethod</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_num</span><span class="hljs-params">(cls)</span>:</span></span><br><span class="line">        cls.num = <span class="hljs-number">100</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">#静态方法</span></span><br><span class="line"><span class="hljs-meta">    @staticmethod</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_menu</span><span class="hljs-params">()</span>:</span></span><br><span class="line">        print(<span class="hljs-string">"----------------------"</span>)</span><br><span class="line">        print(<span class="hljs-string">"    穿越火线V11.1"</span>)</span><br><span class="line">        print(<span class="hljs-string">" 1. 开始游戏"</span>)</span><br><span class="line">        print(<span class="hljs-string">" 2. 结束游戏"</span>)</span><br><span class="line">        print(<span class="hljs-string">"----------------------"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="耦合与解耦"><a href="#耦合与解耦" class="headerlink" title="耦合与解耦"></a>耦合与解耦</h2><ol>
+<li>理解：联系比较强，比如修改一处代码，另一处也要改，那么这两个地方的耦合就比较强</li>
+</ol>
+<h2 id="new方法"><a href="#new方法" class="headerlink" title="new方法"></a><strong>new</strong>方法</h2><ol>
+<li>创建对象的方法</li>
+<li>object.__new__(cls),实例化对象才能执行init方法</li>
+<li>__new__(cls)完成创建</li>
+<li>__init__(cls)完成初始化</li>
+</ol>
+<h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><ol>
+<li>创建出来的对象始终指向一个内存地址</li>
+<li>示例代码：<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span><span class="hljs-params">(object)</span>:</span></span><br><span class="line">        __instance=<span class="hljs-keyword">None</span></span><br><span class="line">        <span class="hljs-comment"># 只实例化一次对象</span></span><br><span class="line">        __init_flag=<span class="hljs-keyword">False</span></span><br><span class="line">        <span class="hljs-comment"># 创建对象</span></span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__new__</span><span class="hljs-params">(cls,name)</span>:</span></span><br><span class="line">            <span class="hljs-keyword">if</span>  cls.__instance==<span class="hljs-keyword">None</span>:</span><br><span class="line">                cls.__instance=object.__new__(cls)</span><br><span class="line">                <span class="hljs-keyword">return</span>  cls.__instance</span><br><span class="line">        <span class="hljs-comment"># 如果不是第一次创建对象则返回上次创建的对象</span></span><br><span class="line">            <span class="hljs-keyword">else</span> :</span><br><span class="line">                <span class="hljs-keyword">return</span>  cls.__instance</span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,name)</span>:</span></span><br><span class="line">            <span class="hljs-comment"># 只实例化一次对象</span></span><br><span class="line">            <span class="hljs-keyword">if</span> Dog.__init_flag==<span class="hljs-keyword">False</span>:</span><br><span class="line">                self.name=name</span><br><span class="line">                Dog.__init_flag=<span class="hljs-keyword">True</span></span><br><span class="line">a=Dog(<span class="hljs-string">"哮天犬"</span>)</span><br><span class="line">b=Dog(<span class="hljs-string">"小白"</span>)</span><br><span class="line">print(id(a))</span><br><span class="line">print(a.name)</span><br><span class="line">print(id(b))</span><br><span class="line">print(b.name)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><ol>
+<li>异常处理：try:  except (NameError,xxx)</li>
+<li>Exception</li>
+<li>else—-没有异常执行</li>
+<li>finally—-最后执行</li>
+<li>ctrl+c也是一个异常</li>
+<li>异常的传递</li>
+<li>raise抛出自定义异常类</li>
+<li>if判断时，空值都是假的，不会执行，例如，””,{},[],(),None,0</li>
+</ol>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><ol>
+<li>import与from import的区别</li>
+<li>as起别名</li>
+<li>print(__name__)，如果是自己调用，打印main,如果是main模块调用，打印模块名字</li>
+<li>if __name__==’__main__’</li>
+</ol>
+<h2 id="循环遇到的坑"><a href="#循环遇到的坑" class="headerlink" title="循环遇到的坑"></a>循环遇到的坑</h2><ol>
+<li>可能会出现漏删</li>
+<li>解决漏删问题，可以找一个列表把要删除的元素保存起来，</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>我的博客即将搬运同步至腾讯云+社区，邀请大家一同入驻：<a href="https://cloud.tencent.com/developer/support-plan?invite_code=2e5vz4xc7o00c" target="_blank" rel="noopener">https://cloud.tencent.com/developer/support-plan?invite_code=2e5vz4xc7o00c</a></p>
+</blockquote>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.546Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 分钟 读完 (大约 1356 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/python入门基础语法总结/">python入门基础语法总结</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>这篇文章记录一下学习python的一些笔记，偶尔看看预防忘记</p>
+</blockquote>
+<h2 id="定义变量，使用变量"><a href="#定义变量，使用变量" class="headerlink" title="定义变量，使用变量"></a>定义变量，使用变量</h2><ol>
+<li>input   用户自己输入值</li>
+<li>print   打印值 可以输出多个变量</li>
+<li>%d|%s   用于输出变量时占位</li>
+</ol>
+<h2 id="字符串-后期爬虫必备"><a href="#字符串-后期爬虫必备" class="headerlink" title="字符串(后期爬虫必备)"></a>字符串(后期爬虫必备)</h2><ol>
+<li>int()把字符串转换为数字</li>
+<li>str()把数字转换为字符串</li>
+<li>len()获取某个字符占用的字节数</li>
+<li>字符串可以用+连接</li>
+<li>字符下标可以为负数</li>
+<li>str[起始位置:终止位置:步长]切片，从起始开始截取字符串，到终止位置结束，不包括终止位置</li>
+<li>str[::-1]倒序</li>
+<li>str.find()|rfind 字符串查找</li>
+<li>str.index()|rindex()字符串查找，与find不同的是返回的结果不同</li>
+<li>str.count(str,start=0,end=len(str))字符串出现的次数</li>
+<li>str.replace(“str”,”str”,替换次数)字符串替换，不会影响原字符串</li>
+<li>str.split(“  “)字符串切割，参数可以不用写自动切割</li>
+<li>str.capitalize()把字符串中的第一个字符大写</li>
+<li>str.title()把字符串中每个单词大写</li>
+<li>str.startswith(obj)|endswith(obj)判断字符串是否以obj开头|结尾，返回bool</li>
+<li>str.lower()把所有大写转换为小写</li>
+<li>str.upper()把所有小写转换为大写</li>
+<li>str.ljust()返回一个原字符串左对齐，并使用空格填充至长度width的新字符串</li>
+<li>str.rjust(width)返回一个原字符串右对齐，并使用空格填充至长度width的新字符串</li>
+<li>str.center()返回一个原字符串居中对齐，并使用空格填充至长度width的新字符串</li>
+<li>str.lstrip()删除字符串开头的空白字符</li>
+<li>str.rstrip()删除字符串末尾的空白字符</li>
+<li>str.strip()删除字符串两端的空白字符</li>
+<li>str.partition()把str分成三部分，str前，str,和str后</li>
+<li>str.rpartition()把str分成三部分，str前，str,和str后，从右边开始分</li>
+<li>str.splitlines()按照行分割，返回一个各行作为元素的列表</li>
+<li>str.isalpha()判断字符串是否都是字母</li>
+<li>str.isdigit()判断字符串是否都是数字</li>
+<li>str.isalnum()判断字符串是否都是数字或字母</li>
+<li>str.isspace()判断字符串是否都是空格</li>
+<li>str.join(mystr)每个字符后面添加一个mystr，构建出一个新的字符串</li>
+</ol>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
+<li>（+） 加</li>
+<li>（ -） 减</li>
+<li>（*） 乘 乘号还可以让字符串重复n次 </li>
+<li>（/） 除</li>
+<li>（//） 取商</li>
+<li>（%） 取余</li>
+<li>（**） 冥 2的十次方1024,2的16次方65536</li>
+</ol>
+<h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><ol>
+<li>判断语句：（if 条件：else 条件：）条件必须加tab键，不然会被当正常代码执行</li>
+<li>比较运算符：&gt; | &lt; |  &gt;= |  &lt;= |  != </li>
+<li>逻辑运算符  or | and | not </li>
+<li>if.. elif elif…else… 语句 </li>
+</ol>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><ol>
+<li>while循环———–print(“”)换行   end=””不换行</li>
+<li>for循环—-可以直接循环字符串 </li>
+<li>break（跳出循环） 与 continue （跳出本次循环）</li>
+</ol>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
+<li>类似php中的数组</li>
+<li>列表=[数据]</li>
+<li><strong>列表的增删改查：</strong></li>
+<li>列表.append 增加</li>
+<li>列表.insert(位置，内容) 增加</li>
+<li>列表.extend(列表) 合并列表，也可以用+运算符</li>
+<li>列表.pop()删除列表最后一个元素</li>
+<li>列表.remove(内容)可以删除指定内容，只删除一次</li>
+<li>del 列表[下标]删除指定下标内容</li>
+<li>列表[下标]=修改元素</li>
+<li>元素 in | not in 列表 判断元素是否在列表</li>
+</ol>
+<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><ol>
+<li>字典={键值对}</li>
+<li><strong>字典的增删改查：</strong></li>
+<li>增：字典[key]=value</li>
+<li>删：del 字典[key]</li>
+<li>改：字典[key]=value</li>
+<li>查：字典.get[key]</li>
+<li>字典.keys :查看字典的key</li>
+<li>字典.values :查看字典的values</li>
+<li>字典.items()：把字典变为元组</li>
+</ol>
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><ol>
+<li>元组=(值)</li>
+<li>元组可以把值赋给多个变量：a,b=元组</li>
+<li>元组定义的值不支持修改</li>
+<li>如果元组只有一个参数，则必须多写一个逗号，不然不是元组</li>
+<li>元组可以为空</li>
+</ol>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ol>
+<li>函数的定义：def 函数名():内容</li>
+<li>列表、字典、可以当做全局变量使用</li>
+<li>不定长参数(以元组形式保存数据)：def 函数名(*args):内容</li>
+<li>不定长参数(以字典形式保存键值对)：def 函数名(**kargs):内容</li>
+<li>实参前面可以加*或者**表示拆包</li>
+<li>.sort()从小到大排序</li>
+<li>.sort(reverse=true)从大到小排序</li>
+<li>.reverse()倒序</li>
+<li>lambda匿名函数的使用</li>
+<li>eval()转换为表达式</li>
+<li>交换两个变量的值：可以用第三个变量，也可以不用，如交换a跟b，a=a+b,b=a-b,a=a-b,python也可以这样子写：a,b=b,a</li>
+<li>修改可以使用+=,仅限于可变类型，列表和字典</li>
+<li>num+=num并不等价于num=num+num</li>
+</ol>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ol>
+<li>open()打开文件</li>
+<li>close()关闭文件</li>
+<li>read()读取文件</li>
+<li>write()写文件</li>
+<li>readlines()按照行读数据</li>
+<li>readline()只读一行数据</li>
+<li>seek(offset,from)定位读写,offset偏移量，from=0文件开头，from=1当前位置，from=2文件末尾，seek实际上就是控制文件指针</li>
+<li>tell()获取文件当前指针位置</li>
+<li>os.rename()文件重命名</li>
+<li>os.remove()删除文件</li>
+<li>os.mkdir()创建文件夹</li>
+<li>os.getcwd()获取当前操作绝对目录</li>
+<li>os.chdir()改变默认操作目录</li>
+<li>os.listdir()获取目录列表</li>
+<li>os.rmdir()删除文件夹</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.542Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 517 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/php面向对象容易忘记的几个知识点/">php面向对象容易忘记的几个知识点</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>好几个月没更新博客了，这段时间心态好像崩了，干啥都没动力，而且还被各种烦心事干扰着，真想回去农村住几个月。。。</p>
+</blockquote>
+<ol>
+<li>面向对象编程时，一般私有和受保护的属性和方法名前可以添加一个_，让开发人员通过名字就知道它的特性</li>
+<li>在类的外面，类中的 <code>常量</code> 和 <code>静态成员</code> 直接使用 <code>类名</code>:: 来访问</li>
+<li>在类的内部使用 <code>$this-&gt;</code>访问类中的属性和方法</li>
+<li>在类中使用<code>self::</code> 访问常量和静态成员</li>
+<li>命名空间使用的是反斜杠<code>\</code></li>
+<li>在同一个命名空间下，可以省略命名空间</li>
+<li>使用 <code>use</code>时，也需要把文件引入进来</li>
+<li>自动加载类时，需要用到<code>spl_autoload_register</code>函数</li>
+<li>在类中我们可以使用<code>static</code>定义<code>静态成员</code>。<code>静态成员</code>可以是<code>静态属性</code>也可以是<code>静态方法</code></li>
+<li>在类外部使用 <code>类名::</code> 来访问静态成员,在类内部使用 <code>self::</code> 访问静态成员</li>
+<li>静态成员和普通成员区别？静态成员：静态成员属于类，无论有多少个对象，值只有一个;普通成员：普通成员属于具体的对象，每个对象拥有自己的属性值。</li>
+<li>一个类只能继承自一个父类（单继承），不能同时继承多个类</li>
+<li><code>$this</code> 代表实例化的那个对象</li>
+<li>Trait,可以让我们不使用继承就可以在多个类中复用方法的机制,使用trait来定义一个特质，特质中只能定义方法</li>
+<li>定义了特质之后，我们就可以在一个类中使用use来引入这个特质，引入了特质之后，这个类就拥有了这个特质中的方法</li>
+<li>trait 可以用来向一个类中添加方法,不用继承就可以实现方法的复用</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.537Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 432 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/Nuxt基本安装与使用/">Nuxt基本安装与使用</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>Nuxt 是基于 nodejs + vue 写的，服务器端渲染 框架（SSR）</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>安装node.js</li>
+<li><p>设置node使用淘宝镜像</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g nrm</span><br><span class="line">nrm use taobao</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 npm 安装 vue-cli</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装nuxt项目</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init nuxt-community/starter-template 项目名称</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果 vue-cli 没有安装, 需先通过 <strong>npm install -g vue-cli</strong> 来安装。</p>
+</li>
+<li>启动项目：<strong>npm run dev</strong><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/Nuxt/image-20180713162140121.png" alt="image"></li>
+</ol>
+<h2 id="页面组件"><a href="#页面组件" class="headerlink" title="页面组件"></a>页面组件</h2><p>页面组件代码结构：<br><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span></span><br><span class="line">    模板内容(html内容，注意：必须有一个根元素)</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-javascript"><span class="hljs-comment">// 组件的JS部分</span></span></span><br><span class="line"><span class="hljs-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;</span></span><br><span class="line"><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-undefined">&#125;</span></span><br><span class="line"><span class="hljs-undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-undefined">	组件的CSS部分</span></span><br><span class="line"><span class="hljs-undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="布局文件"><a href="#布局文件" class="headerlink" title="布局文件"></a>布局文件</h2><ol>
+<li>如果项目中存在 layouts/default.vue文件，那么Nuxt在渲染每个页面时，都会使用这个 defaults.vue 文件做为布局文件</li>
+<li>如果希望页面使用其它的布局文件可以在页面中使用 layout 来设置：<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"error.statusCode === 404"</span>&gt;</span>页面不存在<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">v-else</span>&gt;</span>应用发生错误异常<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">nuxt-link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span>&gt;</span>首 页<span class="hljs-tag">&lt;/<span class="hljs-name">nuxt-link</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-undefined"></span></span><br><span class="line"><span class="hljs-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;</span></span><br><span class="line"><span class="hljs-javascript">  props: [<span class="hljs-string">'error'</span>],</span></span><br><span class="line"><span class="hljs-javascript">  layout: <span class="hljs-string">'blog'</span> <span class="hljs-comment">// 你可以为错误页面指定自定义的布局</span></span></span><br><span class="line"><span class="hljs-undefined">&#125;</span></span><br><span class="line"><span class="hljs-undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="打包资源"><a href="#打包资源" class="headerlink" title="打包资源"></a>打包资源</h2><ol>
+<li>npm run dev  支持热更新，开发模式启动服务器</li>
+<li>npm run build  网站上线前打包</li>
+<li>npm run start 生产环境启动服务器</li>
+</ol>
+<h2 id="参数的接收方式"><a href="#参数的接收方式" class="headerlink" title="参数的接收方式"></a>参数的接收方式</h2><ol>
+<li>用来唯一标识资源的参数写到路由上，比如：/goods/:id</li>
+<li>搜索、排序、翻页等的参数，比如：/goods/?limit=xx&amp;page=xx</li>
+</ol>
+<p>两种参数与文件名总结</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>对应页面</th>
+<th>接收方式 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/goods/:id</td>
+<td>pages/goods/_id.vue</td>
+<td>this.$route.params.id</td>
+</tr>
+<tr>
+<td>/goods?id=x</td>
+<td>pages/goods.vue</td>
+<td>this.$route.query.id</td>
+</tr>
+<tr>
+<td>/order/:catid/:userid/?limit=10</td>
+<td>pages/order/_catid/_userid.vue</td>
+<td>使用 this.$route 中的 params 和 query 来分别接收两种参数。</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.533Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 354 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/mpvue搭配iView开发小程序/">mpvue搭配iView开发小程序</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>一起进步，一起共勉~</p>
+</blockquote>
+<h2 id="初始化mpvue项目"><a href="#初始化mpvue项目" class="headerlink" title="初始化mpvue项目"></a>初始化mpvue项目</h2><p>需提前安装好node跟npm，请自行google安装</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 全局安装 vue-cli</span><br><span class="line">$ npm install --global vue-cli</span><br><span class="line"></span><br><span class="line"># 创建一个基于 mpvue-quickstart 模板的新项目</span><br><span class="line">$ vue init mpvue/mpvue-quickstart my-project</span><br><span class="line"></span><br><span class="line"># 安装依赖</span><br><span class="line">$ cd my-project</span><br><span class="line">$ npm install</span><br><span class="line"># 启动构建</span><br><span class="line">$ npm run dev</span><br></pre></td></tr></table></figure>
+<p>接下来启动微信开发者工具，引入项目即可预览到 <code>mpvue</code> 小程序！</p>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/mpvue搭配iView开发小程序/QQ截图20181010093227.png" alt=""></p>
+<h2 id="使用-iView-组件库"><a href="#使用-iView-组件库" class="headerlink" title="使用 iView 组件库"></a>使用 iView 组件库</h2><p><strong>1、下载iView</strong></p>
+<p>从<a href="https://github.com/TalkingData/iview-weapp" target="_blank" rel="noopener">这里</a>下载<strong>iview-weapp</strong>项目</p>
+<p><strong>2、配置iView</strong></p>
+<p>将iview-weapp中的dist文件夹(此处我重命名为iview,以便区分)复制到mpvue项目的输出目录中(默认是dist，编译后的vue代码在此)</p>
+<p><strong>3、使用iView</strong></p>
+<p>比如，现在我要在<strong><code>src/pages/index/index.vue</code></strong>中使用iView中的<strong><code>i-button</code></strong>组件，那么就先要在<strong><code>src/pages/index/main.json</code></strong>（如果没有该文件，则新建一个）中进行如下配置：</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="hljs-string">"usingComponents"</span>: &#123;</span><br><span class="line">      <span class="hljs-string">"i-button"</span>: <span class="hljs-string">"../../iview/button/index"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>经过上一步的配置，我们就可以开始在<strong><code>src/pages/index/index.vue</code></strong>中使用这个<strong><code>i-button</code></strong>组件了，就像这样：</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;</span><br><span class="line">    &lt;i-button type=<span class="hljs-string">"primary"</span> @click=<span class="hljs-string">"bindViewTap"</span>&gt;这是一个按钮&lt;<span class="hljs-regexp">/i-button&gt;</span></span><br><span class="line"><span class="hljs-regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="hljs-regexp">/template&gt;</span></span><br></pre></td></tr></table></figure>
+<p>运行这个小程序，能看到如下的样子：</p>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/mpvue搭配iView开发小程序/QQ截图20181010140241.png" alt=""></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.528Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 415 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/html5之自定义视频播放器/">html5之自定义视频播放器</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>自定义样式的视频播放器</p>
+</blockquote>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/h5%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="image"></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="hljs-string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="hljs-string">"UTF-8"</span>&gt;</span><br><span class="line">  &lt;meta name=<span class="hljs-string">"viewport"</span> content=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">  &lt;meta http-equiv=<span class="hljs-string">"X-UA-Compatible"</span> content=<span class="hljs-string">"ie=edge"</span>&gt;</span><br><span class="line">  &lt;title&gt;自定义视频播放器&lt;<span class="hljs-regexp">/title&gt;</span></span><br><span class="line"><span class="hljs-regexp">  &lt;!-- 所有的库一定都在当前页面的css的前面 --&gt;</span></span><br><span class="line"><span class="hljs-regexp">  &lt;link rel="stylesheet" href="./</span>css/font-awesome.min.css<span class="hljs-string">"&gt;</span></span><br><span class="line"><span class="hljs-string">  &lt;!-- &lt;link rel="</span>stylesheet<span class="hljs-string">" href="</span>./css/font-awesome.css<span class="hljs-string">"&gt; --&gt;</span></span><br><span class="line"><span class="hljs-string">  &lt;link rel="</span>stylesheet<span class="hljs-string">" href="</span>./css/main.css<span class="hljs-string">"&gt;</span></span><br><span class="line"><span class="hljs-string">&lt;/head&gt;</span></span><br><span class="line"><span class="hljs-string">&lt;body&gt;</span></span><br><span class="line"><span class="hljs-string">  &lt;div class="</span>player<span class="hljs-string">"&gt;</span></span><br><span class="line"><span class="hljs-string">    &lt;!-- 视频 --&gt;</span></span><br><span class="line"><span class="hljs-string">    &lt;video src="</span>./movie/movie02.mp4<span class="hljs-string">" width="</span><span class="hljs-number">100</span>%<span class="hljs-string">" height="</span><span class="hljs-number">100</span>%<span class="hljs-string">"&gt;</span></span><br><span class="line"><span class="hljs-string">      &lt;!-- &lt;source src="</span>./movie<span class="hljs-comment">//movie02.mp4"&gt; --&gt;</span></span><br><span class="line">    &lt;<span class="hljs-regexp">/video&gt;</span></span><br><span class="line"><span class="hljs-regexp">    &lt;!-- 控制菜单 --&gt;</span></span><br><span class="line"><span class="hljs-regexp">    &lt;div class="controls"&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;!-- 播放按钮 --&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;a href="javascript:;" class="play-btn fa fa-play-circle-o"&gt;&lt;/</span>a&gt;</span><br><span class="line">      &lt;!-- 进度条 --&gt;</span><br><span class="line">      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"progress"</span>&gt;</span><br><span class="line">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"progress-bar"</span> style=<span class="hljs-string">"width: 0%"</span>&gt;<span class="hljs-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span><br><span class="line">      &lt;<span class="hljs-regexp">/div&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;!-- 播放时间 --&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;div class="time"&gt;</span></span><br><span class="line"><span class="hljs-regexp">        &lt;span class="current"&gt;00:00:00&lt;/</span>span&gt;<span class="hljs-regexp">/</span></span><br><span class="line"><span class="hljs-regexp">        &lt;span class="total"&gt;00:00:00&lt;/</span>span&gt;</span><br><span class="line">      &lt;<span class="hljs-regexp">/div&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;!-- 全屏按钮 --&gt;</span></span><br><span class="line"><span class="hljs-regexp">      &lt;a href="javascript:;" class="fullscreen fa fa-expand"&gt;&lt;/</span>a&gt;</span><br><span class="line">    &lt;<span class="hljs-regexp">/div&gt;</span></span><br><span class="line"><span class="hljs-regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    <span class="hljs-comment">// 功能:</span></span><br><span class="line">    <span class="hljs-comment">// 1.视频的播放与暂停(图标变化)</span></span><br><span class="line">    <span class="hljs-comment">// 2.总时间的显示</span></span><br><span class="line">    <span class="hljs-comment">// 3.当前时间的显示(进度)</span></span><br><span class="line">    <span class="hljs-comment">// 4.进度条的显示</span></span><br><span class="line">    <span class="hljs-comment">// 5.跳跃播放</span></span><br><span class="line">    <span class="hljs-comment">// 6.全屏</span></span><br><span class="line">    <span class="hljs-comment">// 下面开始实现功能：</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">// 1.视频的播放与暂停(图标变化)</span></span><br><span class="line">    <span class="hljs-comment">// 获取视频以及按钮</span></span><br><span class="line">    <span class="hljs-keyword">var</span> video=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"video"</span>);</span><br><span class="line">    <span class="hljs-keyword">var</span> btn=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".play-btn"</span>);</span><br><span class="line">    btn.addEventListener(<span class="hljs-string">"click"</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;</span><br><span class="line">      <span class="hljs-comment">// 判断视频状态并改变按钮</span></span><br><span class="line">      <span class="hljs-keyword">if</span>(video.paused)&#123;</span><br><span class="line">        video.play();</span><br><span class="line">        <span class="hljs-comment">// this.classList.toggle("fa-pause-circle-o");</span></span><br><span class="line">        <span class="hljs-keyword">this</span>.classList.remove(<span class="hljs-string">"fa-play-circle-o"</span>);</span><br><span class="line">        <span class="hljs-keyword">this</span>.classList.add(<span class="hljs-string">"fa-pause-circle-o"</span>);</span><br><span class="line"></span><br><span class="line">      &#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">        video.pause();</span><br><span class="line">        <span class="hljs-keyword">this</span>.classList.remove(<span class="hljs-string">"fa-pause-circle-o"</span>);</span><br><span class="line">        <span class="hljs-keyword">this</span>.classList.add(<span class="hljs-string">"fa-play-circle-o"</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="hljs-comment">// 2.总时间的显示</span></span><br><span class="line">    <span class="hljs-comment">// 获取总时间的按钮</span></span><br><span class="line">    <span class="hljs-keyword">var</span> total=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".total"</span>);</span><br><span class="line">    video.oncanplay=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> h=<span class="hljs-built_in">Math</span>.floor(video.duration/<span class="hljs-number">3600</span>);</span><br><span class="line">      <span class="hljs-keyword">var</span> m=<span class="hljs-built_in">Math</span>.floor(video.duration/<span class="hljs-number">60</span>-(h*<span class="hljs-number">60</span>));</span><br><span class="line">      <span class="hljs-keyword">var</span> s=<span class="hljs-built_in">Math</span>.floor(video.duration%<span class="hljs-number">60</span>);</span><br><span class="line">      h=h&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+h:h;</span><br><span class="line">      m=m&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+m:m;</span><br><span class="line">      s=s&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+s:s;</span><br><span class="line">      total.innerHTML=h+<span class="hljs-string">':'</span>+m+<span class="hljs-string">':'</span>+s;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-comment">// 获取当前时间</span></span><br><span class="line">    <span class="hljs-keyword">var</span> current=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".current"</span>);</span><br><span class="line">    <span class="hljs-comment">// 获取进度条</span></span><br><span class="line">    <span class="hljs-keyword">var</span> progressBar = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".progress-bar"</span>);</span><br><span class="line">    video.ontimeupdate=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> h=<span class="hljs-built_in">Math</span>.floor(video.currentTime/<span class="hljs-number">3600</span>);</span><br><span class="line">      <span class="hljs-keyword">var</span> m=<span class="hljs-built_in">Math</span>.floor(video.currentTime/<span class="hljs-number">60</span>-(h*<span class="hljs-number">60</span>));</span><br><span class="line">      <span class="hljs-keyword">var</span> s=<span class="hljs-built_in">Math</span>.floor(video.currentTime%<span class="hljs-number">60</span>);</span><br><span class="line">      h=h&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+h:h;</span><br><span class="line">      m=m&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+m:m;</span><br><span class="line">      s=s&lt;<span class="hljs-number">10</span>?<span class="hljs-string">'0'</span>+s:s;</span><br><span class="line">      current.innerHTML=h+<span class="hljs-string">':'</span>+m+<span class="hljs-string">':'</span>+s;</span><br><span class="line">        <span class="hljs-comment">// 计算公式 进度条的长度 = 当前时间 / 总时间 * 100 + '%'</span></span><br><span class="line">        progressBar.style.width = video.currentTime / video.duration * <span class="hljs-number">100</span> + <span class="hljs-string">'%'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-comment">//跳跃播放</span></span><br><span class="line">    <span class="hljs-comment">// 获取进度条</span></span><br><span class="line">    <span class="hljs-keyword">var</span> progress=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".progress"</span>);</span><br><span class="line">    progress.addEventListener(<span class="hljs-string">"click"</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>&#123;</span><br><span class="line">        <span class="hljs-keyword">var</span> clickX=event.offsetX;</span><br><span class="line">        <span class="hljs-keyword">var</span> width=<span class="hljs-keyword">this</span>.offsetWidth</span><br><span class="line">       video.currentTime = clickX / width * video.duration;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="hljs-comment">// 全屏</span></span><br><span class="line">    <span class="hljs-comment">// 获取按钮</span></span><br><span class="line">    <span class="hljs-keyword">var</span> fullscreen = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".fullscreen"</span>);</span><br><span class="line">    fullscreen.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-comment">// 请求全屏</span></span><br><span class="line">      video.webkitRequestFullScreen();</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &lt;<span class="hljs-regexp">/script&gt;</span></span><br><span class="line"><span class="hljs-regexp">&lt;/</span>body&gt;</span><br><span class="line">&lt;<span class="hljs-regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.523Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 417 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/html5之客户端存储/">html5之客户端存储</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="WebStorage介绍"><a href="#WebStorage介绍" class="headerlink" title="WebStorage介绍"></a>WebStorage介绍</h2><p>所谓的WebStorage指的是客户端存储,在这里指的是浏览器端存储,比如在网站上自动登陆这些功能,其实就是把一些少量的数据存储在浏览器等客户端中,这样可以减少没必要的请求到服务器,降低服务器的压力,给用户提供更好的体验.</p>
+<h2 id="WebStorage的三种存储方式"><a href="#WebStorage的三种存储方式" class="headerlink" title="WebStorage的三种存储方式"></a>WebStorage的三种存储方式</h2><ol>
+<li><p>cookie: 广泛使用 存储量4kb左右 会在浏览器和服务器间传递  一般由服务器端创建 可以设置存储时间(默认和session一样) cookie不容易操作 jquery.cookie.js插件</p>
+</li>
+<li><p>session(会话)Storage: H5新增 存储量5M左右 只会在浏览器存储数据(浏览器的内存中) 只会由浏览器端创建 存储时间是打开浏览器开始关闭浏览器消失  方法简洁明了 容易操作</p>
+</li>
+<li><p>local(本地)Storage: H5新增 存储量5M左右 只会在浏览器存储数据(存储在硬盘中) 只会由浏览器端创建 永久存储除非手动删除 方法简介明了 容易操作</p>
+</li>
+</ol>
+<h2 id="localStorage"><a href="#localStorage" class="headerlink" title="localStorage"></a>localStorage</h2><ol>
+<li>添加数据: window.localStorage.setItem(key,value);</li>
+<li>获取数据: window.localStorage.getItem(key);</li>
+<li>移除数据: window.localStorage.removeItem(key);</li>
+<li>清除数据: window.localStorage.clear();</li>
+<li>获取key:  window.localStorage.key(n);</li>
+</ol>
+<h2 id="sessionStorage"><a href="#sessionStorage" class="headerlink" title="sessionStorage"></a>sessionStorage</h2><ol>
+<li>添加数据: window.sessionStorage.setItem(key,value);</li>
+<li>获取数据: window.sessionStorage.getItem(key);</li>
+<li>移除数据: window.sessionStorage.removeItem(key);</li>
+<li>清除数据: window.sessionStorage.clear();</li>
+<li>获取key:  window.sessionStorage.key(n从0开始);  </li>
+</ol>
+<ul>
+<li>应用场景: 存储一些少量临时的数据(比较少用)</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>localStorage和sessionStorage只能存储json</li>
+<li>存储的数据不能太多 太多浏览器会卡</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.519Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 768 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/html5新特性实现tab切换/">html5新特性实现tab选项卡切换</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>之前学习了html,以及css，写后端也有一段时间了，现在把更多的精力放在了前端，那么，就从html5以及css3开始吧~~~，今天主要是实现了tab选项卡切换，之前也写过，现在用html5获取元素的新方法实现了一下，话不多说，代码如下</p>
+</blockquote>
+<h2 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h2><p><strong>分析代码可以知道，选项卡的class为active的时候，选项卡就被选中，当内容section的style属性为display:block时，内容就被选中</strong><br><figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="hljs-selector-tag">DOCTYPE</span> <span class="hljs-selector-tag">html</span>&gt;</span><br><span class="line">&lt;html lang="en"&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="hljs-selector-tag">head</span>&gt;</span><br><span class="line">  &lt;meta charset="UTF-8"&gt;</span><br><span class="line">  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span><br><span class="line">  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">  &lt;<span class="hljs-selector-tag">style</span>&gt;</span><br><span class="line">    <span class="hljs-selector-tag">body</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;</span><br><span class="line">      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;</span><br><span class="line">      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F7F7F7</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-class">.tabs</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;</span><br><span class="line">      <span class="hljs-attribute">margin</span>: <span class="hljs-number">30px</span> auto;</span><br><span class="line">      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFF</span>;</span><br><span class="line">      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#C0DCC0</span>;</span><br><span class="line">      <span class="hljs-attribute">box-sizing</span>: border-box;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-class">.tabs</span> <span class="hljs-selector-tag">nav</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;</span><br><span class="line">      <span class="hljs-attribute">text-align</span>: center;</span><br><span class="line">      <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;</span><br><span class="line">      <span class="hljs-attribute">overflow</span>: hidden;</span><br><span class="line">      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#C0DCC0</span>;</span><br><span class="line">      <span class="hljs-comment">/* 伸缩盒模型 */</span></span><br><span class="line">      <span class="hljs-attribute">display</span>: flex;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">display</span>: block;</span><br><span class="line">      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;</span><br><span class="line">      <span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#FFF</span>;</span><br><span class="line">      <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;</span><br><span class="line">      <span class="hljs-attribute">text-decoration</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:last-child</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">border-right</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.active</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#9BAF9B</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-class">.cont</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">overflow</span>: hidden;</span><br><span class="line">      <span class="hljs-attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-selector-class">.cont</span> <span class="hljs-selector-tag">ol</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">line-height</span>: <span class="hljs-number">30px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="hljs-selector-tag">body</span>&gt;</span><br><span class="line">  &lt;div class="tabs"&gt;</span><br><span class="line">    &lt;<span class="hljs-selector-tag">nav</span>&gt;</span><br><span class="line">      &lt;a href="javascript:;" data-cont="local"  class="active"&gt;国内新闻&lt;/a&gt;</span><br><span class="line">      &lt;a href="javascript:;" data-cont="global" &gt;国际新闻&lt;/a&gt;</span><br><span class="line">      &lt;a href="javascript:;" data-cont="sports" &gt;体育新闻&lt;/a&gt;</span><br><span class="line">      &lt;a href="javascript:;" data-cont="funny"&gt;娱乐新闻&lt;/a&gt;</span><br><span class="line">    &lt;/nav&gt;</span><br><span class="line">    &lt;section class="cont" id="local" style="display:block"&gt;</span><br><span class="line">      &lt;<span class="hljs-selector-tag">ol</span>&gt;</span><br><span class="line">        &lt;li&gt;国内新闻&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在感在广1处继续蔓延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大旱，农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广在全国暴发&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全国多处继续蔓延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大旱，农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">      &lt;/ol&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">    &lt;section class="cont" id="global" &gt;</span><br><span class="line">      &lt;<span class="hljs-selector-tag">ol</span>&gt;</span><br><span class="line">        &lt;li&gt;国际新闻&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感次发生蔓延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大旱，农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广减产绝收发&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全国多作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">      &lt;/ol&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">    &lt;section class="cont" id="sports"&gt;</span><br><span class="line">      &lt;<span class="hljs-selector-tag">ol</span>&gt;</span><br><span class="line">        &lt;li&gt;体育新闻&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全国多处农作物农延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大旱，农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全农作物继续蔓延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">      &lt;/ol&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">    &lt;section class="cont" id="funny"&gt;</span><br><span class="line">      &lt;<span class="hljs-selector-tag">ol</span>&gt;</span><br><span class="line">        &lt;li&gt;娱乐新闻&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全国物农延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;南方大旱，农作物减产绝收面积上亩&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;禽流感在全农作物继续蔓延，温家宝指示&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;猪流感在广东群体性暴发&lt;/li&gt;</span><br><span class="line">      &lt;/ol&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="js代码"><a href="#js代码" class="headerlink" title="js代码"></a>js代码</h2><p><strong>内容卡指内容，tab卡指点击的选项</strong><br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  &lt;!--<span class="hljs-built_in">document</span>.querySelectorAll获取所有的a标签--&gt;</span><br><span class="line">  <span class="hljs-keyword">var</span> aArr=<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'a'</span>);</span><br><span class="line">  &lt;!--循环遍历--&gt;</span><br><span class="line">  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;aArr.length;i++)&#123;</span><br><span class="line">  &lt;!--给每个获取到的元素添加点击事件--&gt;</span><br><span class="line">      aArr[i].onclick=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;</span><br><span class="line">      &lt;!--获取当前激活的tab选项卡--&gt;</span><br><span class="line">         <span class="hljs-keyword">var</span> active=<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".active"</span>);</span><br><span class="line">         &lt;!--移除之前的选项卡激活属性--&gt;</span><br><span class="line">         active.classList.remove(<span class="hljs-string">"active"</span>);</span><br><span class="line">         &lt;!--给当前点击的选项卡添加激活属性--&gt;</span><br><span class="line">         <span class="hljs-keyword">this</span>.classList.add(<span class="hljs-string">"active"</span>);</span><br><span class="line">         &lt;!--获取当前的section标签id名字--&gt;</span><br><span class="line">         <span class="hljs-keyword">var</span> name=<span class="hljs-keyword">this</span>.getAttribute(<span class="hljs-string">"data-cont"</span>);</span><br><span class="line">         &lt;!--根据获取到的名字获取当前的内容卡--&gt;</span><br><span class="line">         <span class="hljs-keyword">var</span> section=<span class="hljs-built_in">document</span>.getElementById(name);</span><br><span class="line">         &lt;!--获取所有<span class="hljs-class"><span class="hljs-keyword">class</span>为<span class="hljs-title">cont</span>的元素，并循环遍历，取消所有内容卡的样式--&gt;</span></span><br><span class="line"><span class="hljs-class">         <span class="hljs-title">var</span> <span class="hljs-title">cont</span> </span>= <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">"cont"</span>);</span><br><span class="line">         <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;cont.length;i++)&#123;</span><br><span class="line">          cont[i].style.display=<span class="hljs-string">"none"</span>;</span><br><span class="line"></span><br><span class="line">         &#125;</span><br><span class="line">         &lt;!--激活当前内容卡的样式--&gt;</span><br><span class="line">         section.style.display=<span class="hljs-string">"block"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;<span class="hljs-regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><strong>排它思想</strong></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.514Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 分钟 读完 (大约 1292 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/ECMAScript 6介绍/">ECMAScript 6介绍</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>ECMAScript 6.0（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。标准的制定者有计划，以后每年发布一次标准，使用年份作为版本。因为ES6的第一个版本是在2015年发布的，所以又称ECMAScript 2015（简称ES2015）。<br>2016年6月，小幅修订的《ECMAScript2016标准》（简称ES2016）如期发布。由于变动非常小（只新增了数组实例的includes方法和指数运算符），因此 ES2016 与 ES2015 基本上是同一个标准，都被看作是ES6。根据计划，2017年6月将发布ES2017。—以上内容来自<a href="https://www.w3cschool.cn/ecmascript/ja8d1q5f.html" target="_blank" rel="noopener">W3Cschool</a></p>
+</blockquote>
+<h2 id="使用let声明变量"><a href="#使用let声明变量" class="headerlink" title="使用let声明变量"></a>使用let声明变量</h2><h3 id="在es6中我们使用let声明变量-但是为什么要使用let声明变量-下面来比较一下用var声明变量跟使用let声明变量的区别"><a href="#在es6中我们使用let声明变量-但是为什么要使用let声明变量-下面来比较一下用var声明变量跟使用let声明变量的区别" class="headerlink" title="在es6中我们使用let声明变量,但是为什么要使用let声明变量?下面来比较一下用var声明变量跟使用let声明变量的区别"></a>在es6中我们使用let声明变量,但是为什么要使用let声明变量?下面来比较一下用var声明变量跟使用let声明变量的区别</h3><h4 id="使用var-声明变量"><a href="#使用var-声明变量" class="headerlink" title="使用var 声明变量"></a>使用var 声明变量</h4><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 使用var 声明变量  </span></span><br><span class="line"><span class="hljs-keyword">var</span> bVariable = <span class="hljs-string">"变量"</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 存在的问题:</span></span><br><span class="line"><span class="hljs-comment">// 1.var命令会发生”变量提升“现象，即变量可以在声明之前使用，值为undefined</span></span><br><span class="line"> <span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// 此时输出undefined</span></span><br><span class="line"> <span class="hljs-keyword">var</span> name = <span class="hljs-string">"张三"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 2.var命令允许我们重复声明变量，并且不会报错</span></span><br><span class="line"><span class="hljs-keyword">var</span> name = <span class="hljs-string">"jerry"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> name = <span class="hljs-string">"tom"</span>;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(name);<span class="hljs-comment">// 此时输出tom</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 3.通过 var 定义的变量，它的作用域是全局作用域或者函数作用域</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">varvslet</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// 此时输出undefined</span></span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) &#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// 0, 1, 2</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="使用let-声明变量"><a href="#使用let-声明变量" class="headerlink" title="使用let 声明变量"></a>使用let 声明变量</h4><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//1.声明的变量仅在块级作用域有效</span></span><br><span class="line"> &#123;</span><br><span class="line">   <span class="hljs-keyword">let</span> name = <span class="hljs-string">"zhangsan"</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> <span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// 此时name不会被访问到，因为let会构成块级作用域</span></span><br><span class="line"></span><br><span class="line"> &#123;</span><br><span class="line">   <span class="hljs-keyword">var</span> name1 = <span class="hljs-string">"lisi"</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> <span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// 此时name会被访问到，因为var会构成全局作用域</span></span><br><span class="line"><span class="hljs-comment">//2.不存在变量提升，不存在预解析</span></span><br><span class="line"> <span class="hljs-built_in">console</span>.log(family);</span><br><span class="line"> <span class="hljs-keyword">var</span> family = <span class="hljs-string">"张三"</span>;</span><br><span class="line"><span class="hljs-comment">// 上面的代码实际上会发生预解析，解析成下面的代码，会先定义family</span></span><br><span class="line"> <span class="hljs-keyword">var</span> family;</span><br><span class="line"> <span class="hljs-built_in">console</span>.log(family);<span class="hljs-comment">// 此时输出undefined</span></span><br><span class="line"> family =<span class="hljs-string">"张三"</span>;</span><br><span class="line"><span class="hljs-comment">//但是使用let，则不会出现这种情况</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(name);  <span class="hljs-comment">//不会输出undefined，直接出现暂时性死区</span></span><br><span class="line"><span class="hljs-keyword">let</span> name=<span class="hljs-string">"张三"</span>;</span><br><span class="line"><span class="hljs-comment">//3.暂时性死区</span></span><br><span class="line"><span class="hljs-comment">//指程序报错终止执行</span></span><br><span class="line"><span class="hljs-comment">//4.不允许重复声明</span></span><br><span class="line"><span class="hljs-keyword">let</span> name=<span class="hljs-string">"张三"</span>;</span><br><span class="line"><span class="hljs-keyword">let</span> name=<span class="hljs-string">"李四"</span>; <span class="hljs-comment">//此时不允许重复定义: Identifier 'name' has already been declared</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530139997600.png" alt="image"></p>
+<h2 id="使用const声明常量"><a href="#使用const声明常量" class="headerlink" title="使用const声明常量"></a>使用const声明常量</h2><p>js中并没有声明常量的关键字，在es6中，出现了可以声明常量的关键字，const<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">const</span> name=<span class="hljs-string">"张三"</span>;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>声明时必须赋值,否则报错</li>
+<li>只在块级作用域有效</li>
+<li>存在暂时性死区</li>
+<li>不可重复声明</li>
+<li>当常量是对象时，对象本身是可变的,依然可以添加新属性</li>
+<li>了解基本数据类型以及复杂数据类型</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530140374940.png" alt="image"></p>
+<h2 id="ES6中的字符串"><a href="#ES6中的字符串" class="headerlink" title="ES6中的字符串"></a>ES6中的字符串</h2><p>ES6之前：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 1.需要使用拼接字符串</span></span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">var</span> html = <span class="hljs-string">'&lt;header&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;a class="back" href="javascript:;"&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;i&gt;&lt;/i&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;span&gt;优惠活动&lt;/span&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;/a&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;/header&gt;'</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 2.如果上面的"优惠活动"是变量</span></span><br><span class="line"> <span class="hljs-keyword">var</span> title = <span class="hljs-string">"优惠活动"</span>;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">var</span> html = <span class="hljs-string">'&lt;header&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;a class="back" href="javascript:;"&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;i&gt;&lt;/i&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;span&gt;'</span> + title + <span class="hljs-string">'&lt;/span&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;/a&gt;'</span> +</span><br><span class="line">   <span class="hljs-string">'&lt;/header&gt;'</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 3.如果有一个字符串"Hello World",如何遍历</span></span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">var</span> str = <span class="hljs-string">"Hello World"</span>;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">   <span class="hljs-built_in">console</span>.log(str[i]);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES6之中：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 1.不需要使用拼接字符串,直接使用模板字符串</span></span><br><span class="line"> <span class="hljs-keyword">let</span> html = <span class="hljs-string">`</span></span><br><span class="line"><span class="hljs-string"> &lt;header&gt;</span></span><br><span class="line"><span class="hljs-string">   &lt;a class="back" href="javascript:;"&gt;</span></span><br><span class="line"><span class="hljs-string">     &lt;i&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="hljs-string">     &lt;span&gt;优惠活动&lt;/span&gt;</span></span><br><span class="line"><span class="hljs-string">   &lt;/a&gt;</span></span><br><span class="line"><span class="hljs-string"> &lt;/header&gt;`</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 2.如果上面的'优惠活动'是变量,也不需要使用拼接字符串的方式 只需要把变量写在这样的格式中 $&#123;变量&#125;</span></span><br><span class="line"> <span class="hljs-keyword">var</span> title = <span class="hljs-string">"优惠活动"</span>;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">let</span> html = <span class="hljs-string">`</span></span><br><span class="line"><span class="hljs-string"> &lt;header&gt;</span></span><br><span class="line"><span class="hljs-string">   &lt;a class="back" href="javascript:;"&gt;</span></span><br><span class="line"><span class="hljs-string">     &lt;i&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="hljs-string">     &lt;span&gt;<span class="hljs-subst">$&#123;title&#125;</span>&lt;/span&gt;</span></span><br><span class="line"><span class="hljs-string">   &lt;/a&gt;</span></span><br><span class="line"><span class="hljs-string"> &lt;/header&gt;`</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 3. 使用for...of</span></span><br><span class="line"> <span class="hljs-keyword">var</span> str = <span class="hljs-string">"HelloWorld"</span>;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> str) &#123;</span><br><span class="line">   <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="ES6中的函数"><a href="#ES6中的函数" class="headerlink" title="ES6中的函数"></a>ES6中的函数</h2><h3 id="rest参数"><a href="#rest参数" class="headerlink" title="rest参数"></a>rest参数</h3><p>ES6之前：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 1.函数接受任意个数的参数并排序</span></span><br><span class="line"> <span class="hljs-keyword">var</span> sortNumber = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">   <span class="hljs-keyword">return</span> <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>).sort(); </span><br><span class="line">   <span class="hljs-comment">//此时arguments是类数组，可以遍历  可以有length属但是不能有数组的方法</span></span><br><span class="line">   <span class="hljs-comment">//Array.prototype.slice.call()就是把类数组转换成数组</span></span><br><span class="line"> &#125;</span><br><span class="line"> <span class="hljs-built_in">console</span>.log(sortNumber(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">9</span>,<span class="hljs-number">0</span>));</span><br></pre></td></tr></table></figure></p>
+<p>ES6之中：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 1.函数接受任意个数的参数并排序</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">...rest</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(rest);<span class="hljs-comment">//此时rest是数组</span></span><br><span class="line">  red.sort();</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(rest);</span><br><span class="line">&#125;</span><br><span class="line">add(<span class="hljs-number">1</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">0</span>,<span class="hljs-number">6</span>);</span><br><span class="line"></span><br><span class="line">&lt;!--注意:<span class="hljs-built_in">arguments</span>是类数组，rest是数组，--&gt;</span><br><span class="line">&lt;!--rest参数之后不能再有其他参数（即只能是最后一个参数），--&gt;</span><br><span class="line">&lt;!--否则会报错。--&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><p>ES6之前：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//匿名函数写法</span></span><br><span class="line"> <span class="hljs-keyword">var</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x,y</span>) </span>&#123;</span><br><span class="line">   <span class="hljs-keyword">return</span> x + y;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES6之中：<br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//匿名函数写法</span></span><br><span class="line"> <span class="hljs-keyword">var</span> add = <span class="hljs-function">(<span class="hljs-params">x,y</span>) =&gt;</span> &#123;<span class="hljs-keyword">return</span> x+y&#125;;</span><br><span class="line"> <span class="hljs-comment">//注意： 箭头函数不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h2><p><strong>ES6 允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构(Destructuring)。</strong><br><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//数组解构赋值</span></span><br><span class="line"> <span class="hljs-keyword">var</span> [a,b,c] = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>];</span><br><span class="line"> <span class="hljs-built_in">console</span>.log(a,b,c);</span><br><span class="line"> <span class="hljs-keyword">var</span> [a,b] = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>];</span><br><span class="line"> </span><br><span class="line"><span class="hljs-comment">//对象解构赋值</span></span><br><span class="line"> <span class="hljs-keyword">var</span> obj = &#123;<span class="hljs-attr">a</span>: <span class="hljs-number">1</span>,<span class="hljs-attr">b</span>: <span class="hljs-number">2</span>&#125;</span><br><span class="line"> <span class="hljs-keyword">var</span> &#123;a,b&#125; =&#123;<span class="hljs-attr">a</span>:<span class="hljs-number">1</span>, <span class="hljs-attr">b</span>:<span class="hljs-number">2</span>&#125; </span><br><span class="line"> <span class="hljs-built_in">console</span>.log(a,b);</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/tangchunwei/MyImage/master/1530141013915.png" alt="image"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T01:50:13.509Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 503 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/11/15/css3之LESS简单入门/">css3之LESS简单入门</a>
+            
+        </h1>
+        <div class="content">
+            <blockquote>
+<p>CSS（层叠样式表）是一项出色的技术作为一门标记性语言，CSS 的先天性<strong>优点</strong>是语法相对简单，对使用者的要求较低，但它的<strong>致命弱点</strong>是需要<strong>书写大量看似没有逻辑的代码</strong>，<strong>不方便维护及扩展，不利于复用</strong>。造成这一现象的很大原因在于CSS是一门非程序式语言，没有变量、函数、SCOPE（作用域）等概念。Less的出现，为Web开发者带来了福音，它是一门CSS预处理语言，引入了变量、运算、函数、继承等功能，为CSS语言赋予了动态语言的特性。Less大大简化了CSS的编写，并且降低了CSS的维护成本。就像它的名称所说的那样，<strong>Less可以让我们用更少的代码做更多的事情</strong>。</p>
+</blockquote>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>1.注释<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 单行注释  不会编译到css中</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/* 多行注释  会编译到css中 */</span></span><br></pre></td></tr></table></figure></p>
+<p>2.变量<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 语法: @变量名: 值</span><br><span class="line">@white: #fff;</span><br><span class="line">@bgColor: #ccc;</span><br><span class="line">@fontSize: 22px;</span><br><span class="line">// 多值变量</span><br><span class="line">@normalSize: 20px 30px 40px 50px;</span><br><span class="line"></span><br><span class="line"><span class="hljs-selector-tag">body</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">background-color</span>:@bgColor;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-selector-tag">main</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">color</span>: @bgColor;</span><br><span class="line">  <span class="hljs-attribute">background-color</span>: @white;</span><br><span class="line">  <span class="hljs-attribute">font-size</span>:@fontSize;</span><br><span class="line">  <span class="hljs-attribute">padding</span>:@normalSize;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-selector-tag">aside</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">font-size</span>:@fontSize;</span><br><span class="line">  <span class="hljs-attribute">margin</span>:@normalSize;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.嵌套(尽量不要嵌套超过三层)<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-class">.container</span> &#123;</span><br><span class="line">  h1 &#123;</span><br><span class="line">    <span class="hljs-selector-tag">font-size</span>: 25<span class="hljs-selector-tag">px</span>;</span><br><span class="line">    <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#e45456</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-selector-tag">p</span> &#123;</span><br><span class="line">    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;</span><br><span class="line">    <span class="hljs-attribute">color</span>: <span class="hljs-number">#3c7949</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-selector-class">.myclass</span> &#123;</span><br><span class="line">     h1 &#123;</span><br><span class="line">      <span class="hljs-selector-tag">font-size</span>: 25<span class="hljs-selector-tag">px</span>;</span><br><span class="line">      <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#e45456</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="hljs-selector-tag">p</span> &#123;</span><br><span class="line">      <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;</span><br><span class="line">      <span class="hljs-attribute">color</span>: <span class="hljs-number">#3c7949</span>;</span><br><span class="line">     &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ol start="4">
+<li>父选择器符号(&amp;) 直接子选则器符号(&gt;)<figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-class">.container</span> &#123;</span><br><span class="line">    &gt; h1 &#123;</span><br><span class="line">     <span class="hljs-selector-tag">font-size</span>: 25<span class="hljs-selector-tag">px</span>;</span><br><span class="line">     <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#e45456</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    &gt; <span class="hljs-selector-tag">p</span> &#123;</span><br><span class="line">     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;</span><br><span class="line">     <span class="hljs-attribute">color</span>: <span class="hljs-number">#3c7949</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-selector-class">.myclass</span> &#123;</span><br><span class="line">      h1 &#123;</span><br><span class="line">       <span class="hljs-selector-tag">font-size</span>: 25<span class="hljs-selector-tag">px</span>;</span><br><span class="line">      <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#e45456</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="hljs-selector-tag">p</span> &#123;</span><br><span class="line">       <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;</span><br><span class="line">       <span class="hljs-attribute">color</span>: <span class="hljs-number">#3c7949</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>5.四则运算<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-class">.box</span> &#123;</span><br><span class="line">   <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>*<span class="hljs-number">3</span> + <span class="hljs-number">10</span>;</span><br><span class="line">   <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>/<span class="hljs-number">3</span>-<span class="hljs-number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>6.函数<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">.effect(@normal:yellow, @hover:orange, @visited:darkorange, @active:green) &#123;</span><br><span class="line">  <span class="hljs-selector-tag">color</span>: @<span class="hljs-keyword">normal</span>;</span><br><span class="line"></span><br><span class="line">  &amp;<span class="hljs-selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">color</span>: @hover;  </span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;<span class="hljs-selector-pseudo">:visited</span> &#123;</span><br><span class="line">    <span class="hljs-attribute">color</span>: @visited;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;<span class="hljs-selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="hljs-attribute">color</span>: @active;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-selector-tag">a</span> &#123;</span><br><span class="line">  // .effect(red,green,blue,black);</span><br><span class="line">  <span class="hljs-selector-class">.effect</span>()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-selector-class">.box</span> &#123;</span><br><span class="line">  .effect(pink,hotpink,lightpink,white);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>7.导入<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">不同的功能 要把这些代码放到不同的文件中</span><br><span class="line">格式:  @<span class="hljs-keyword">import</span> <span class="hljs-string">"src"</span></span><br></pre></td></tr></table></figure></p>
+<p>8.继承<br><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-tag">aside</span> &#123;</span><br><span class="line">  <span class="hljs-attribute">font-size</span>:<span class="hljs-number">24px</span>;</span><br><span class="line">  <span class="hljs-attribute">margin</span>:<span class="hljs-number">20px</span> <span class="hljs-number">30px</span> <span class="hljs-number">40px</span> <span class="hljs-number">50px</span>;</span><br><span class="line">  <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-selector-tag">main</span> &#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-attribute">color</span>:<span class="hljs-number">#ccc</span>;</span><br><span class="line">  <span class="hljs-attribute">background-color</span>:<span class="hljs-number">#fff</span>;</span><br><span class="line">  // font-size:24px;</span><br><span class="line">  // padding:20px 30px 40px 50px;</span><br><span class="line">  &amp;<span class="hljs-selector-pseudo">:extend(aside)</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:none</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+    
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
+        </div>
+        <div class="pagination-next">
+            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</div>
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="予笙">
+                    
+                    <p class="is-size-4 is-block">
+                        予笙
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        php开发工程师
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>江苏 沭阳</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        33
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        15
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/liuzhenxiulzx">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/liuzhenxiulzx">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="http://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="http://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="http://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">https://github.com/ppoffice</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/Geek/">
+            <span class="level-start">
+                <span class="level-item">Geek</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/前端/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">18</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/后端/">
+            <span class="level-start">
+                <span class="level-item">后端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">10</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/生活/">
+            <span class="level-start">
+                <span class="level-item">生活</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Nuxt/" style="font-size: 10px;">Nuxt</a> <a href="/tags/Vue/" style="font-size: 12px;">Vue</a> <a href="/tags/cropper/" style="font-size: 10px;">cropper</a> <a href="/tags/css3/" style="font-size: 16px;">css3</a> <a href="/tags/html5/" style="font-size: 16px;">html5</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/laravel/" style="font-size: 14px;">laravel</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mockjs/" style="font-size: 10px;">mockjs</a> <a href="/tags/php/" style="font-size: 18px;">php</a> <a href="/tags/python/" style="font-size: 12px;">python</a> <a href="/tags/区块链/" style="font-size: 10px;">区块链</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/生活杂谈/" style="font-size: 12px;">生活杂谈</a>
+    </div>
+</div>
+
+    
+    
+        <div class="card card-transparent is-hidden-widescreen">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/正则表达式常用语法总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="正则表达式常用语法总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.593Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/正则表达式常用语法总结/" class="has-link-black-ter is-size-6">正则表达式常用语法总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/移动端事件详解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="移动端事件详解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.589Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/移动端事件详解/" class="has-link-black-ter is-size-6">移动端事件详解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/学习笔记总结/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="学习笔记总结">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.585Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/学习笔记总结/" class="has-link-black-ter is-size-6">学习笔记总结</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/网络状态检测/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="html5之网络状态检测">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.580Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/网络状态检测/" class="has-link-black-ter is-size-6">html5之网络状态检测</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/15/区块链分享/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="区块链分享">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-15T01:50:13.576Z">2018-11-15</time></div>
+                    <a href="/2018/11/15/区块链分享/" class="has-link-black-ter is-size-6">区块链分享</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Geek/">Geek</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">33</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <ul class="menu-list">
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Git/">
+                        <span class="level-start">
+                            <span class="level-item">Git</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Nuxt/">
+                        <span class="level-start">
+                            <span class="level-item">Nuxt</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Vue/">
+                        <span class="level-start">
+                            <span class="level-item">Vue</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/cropper/">
+                        <span class="level-start">
+                            <span class="level-item">cropper</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/css3/">
+                        <span class="level-start">
+                            <span class="level-item">css3</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/html5/">
+                        <span class="level-start">
+                            <span class="level-item">html5</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">8</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/javascript/">
+                        <span class="level-start">
+                            <span class="level-item">javascript</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">11</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/laravel/">
+                        <span class="level-start">
+                            <span class="level-item">laravel</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">6</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/markdown/">
+                        <span class="level-start">
+                            <span class="level-item">markdown</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/mockjs/">
+                        <span class="level-start">
+                            <span class="level-item">mockjs</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/php/">
+                        <span class="level-start">
+                            <span class="level-item">php</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">9</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/python/">
+                        <span class="level-start">
+                            <span class="level-item">python</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/区块链/">
+                        <span class="level-start">
+                            <span class="level-item">区块链</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/正则表达式/">
+                        <span class="level-start">
+                            <span class="level-item">正则表达式</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/生活杂谈/">
+                        <span class="level-start">
+                            <span class="level-item">生活杂谈</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">2</span>
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <!-- <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="予笙博客" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2018 John Doe&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-icarus">Icarus</a>
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div> -->
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
